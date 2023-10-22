@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/projects.css">
+    <!--#include file="/favicon.html"-->
+    <title>harry made this</title>
+</head>
+<body>
+    <!--#include file="/menu.html"-->
+    <h1>namegen</h1>
+    <h4>harry's namegen has moved. please update your bookmarks and homepage accordingly</h4>
+
+    <a href="https://harrymadethis.com/projects/namegen">harry's updated and improved namegen</a>
+</body>
+
+</html>

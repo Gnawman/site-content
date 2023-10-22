@@ -1,0 +1,106 @@
+/*these are some nice colours:
+off-black	#101217
+off-white 	#F8F7E5
+green		#70A288
+purp		#B48EAE
+yellow		#FFEAA8
+*/
+
+:root {
+	--offblack: #101217;
+	--offwhite: #F8F7E5;
+  }
+
+body {
+	font-family: "Lucida Console", Monaco, monospace;
+	color: var(--offwhite);
+	background-color: var(--offblack);
+	text-align: center;
+	-moz-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+p {
+    text-align: justify;
+	width: 64ch;
+    margin: auto;
+    line-height: 1.4
+}
+
+h1 {
+	color: var(--feature);
+}
+
+h3 {
+	font-weight: 400;
+}
+
+h4 {
+	font-weight: 400;
+}
+
+/*links*/
+a:link {
+	color: var(--feature);
+	text-decoration: none;
+}
+
+a:visited {
+	color: var(--feature);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--feature);
+	text-decoration: underline;
+}
+
+a:active {
+	color: var(--feature);
+	text-decoration: underline;
+}
+
+/*images*/
+img {
+	max-width: 64ch;
+}
+
+/*buttons*/
+button {
+	background-color: var(--feature);
+	border-radius: 3pt;
+	border: none;
+	font-family: "Lucida Console", Monaco, monospace;
+	text-align: center;
+}
+
+/*input boxes*/
+input {
+	background-color: var(--offblack);
+	border: 1px solid var(--feature);
+	color: var(--offwhite);
+	text-align: center;
+}
+
+/* tables */
+table {
+	border-spacing: 0;
+	margin: auto;
+}
+
+td {
+	border: 1px solid var(--feature);
+	padding: 1em;
+	height: 6em;
+	width: 6em;
+}
+
+td.blank {
+	border: 1px solid var(--offblack);
+}
+
+/*custom styling for activated bingo squares*/
+td.highlight {
+	background-color: var(--feature);
+	color: #101217;
+}

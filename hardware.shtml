@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/hardware.css">
+    <!--#include file="/favicon.html"-->
+    <title>hardware</title>
+</head>
+<body>
+    <!--#include file="/menu.html"-->
+    <h1>hardware</h1>
+    <h3>current daily drivers:</h3>
+    <h4><a href="/hardware/bevel.shtml">bevel</a></h4>
+    <h4><a href="/hardware/ergodox.shtml">ergodox ez</a></h4>
+    <h4><a href="/hardware/enchonker.shtml">enchonker</a></h4>
+    <br>
+    <h3>in-progress and previous projects:</h3>
+    <table>
+        <tr>
+            <th>name</th>
+            <th>status</th>
+            <th>notes</th>
+        </tr>
+        <tr>
+            <td>gherkin</td>
+            <td>not in use</td>
+            <td>30% keyboard, more info can be found at <a href="https://www.40percent.club/2016/11/gherkin.html">40percent.club</a></td>
+        </tr>
+        <tr>
+            <td>corne</td>
+            <td>not in use</td>
+            <td>40% keyboard by foostan. more info at their <a href="https://github.com/foostan/crkbd">github</a></td>
+        </tr>
+    </table>
+</body>
+
+</html>

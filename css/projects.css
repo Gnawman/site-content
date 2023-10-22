@@ -1,0 +1,10 @@
+:root {
+    --feature: #FFEAA8;
+}
+
+p {
+    text-align: center;
+    max-width: none;
+    margin: auto;
+    line-height: 1.4
+}

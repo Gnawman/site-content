@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/home.css">
+    <!--#include file="/favicon.html"-->
+    <title>418 i'm a teapot</title>
+</head>
+<body>
+    <!--#include file="/menu.html"-->
+    <h1>418</h1>
+    <h4>i'm a teapot i'm a teapot i'm a teapot i'm a teapot</h4>
+</body>
+
+</html>

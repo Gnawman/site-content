@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/home.css">
+    <!--#include file="/favicon.html"-->
+    <title>403 forbidden</title>
+</head>
+<body>
+    <!--#include file="/menu.html"-->
+    <h1>403</h1>
+    <h4>this action is prohibited. the request should not be repeated.</h4>
+</body>
+
+</html>

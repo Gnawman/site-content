@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/writing.css">
+    <!--#include file="/favicon.html"-->
+    <title>writing</title>
+</head>
+<body>
+    <!--#include file="/menu.html"-->
+    <h1>writing</h1>
+    <h4>short stories and in-progress works</h4>
+    <a href="/writing/satara.shtml">satara</a>
+    <br><br>
+    <a href="/writing/gods_above.shtml">gods above</a>
+    <br><br>
+    <a href="/writing/redshift.shtml">redshift</a>
+</body>
+
+</html>

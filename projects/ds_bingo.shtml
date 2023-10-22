@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/projects.css">
+    <!--#include file="/favicon.html"-->
+    <title>ds bingo</title>
+</head>
+<body>
+    <!--#include file="/menu.html"-->
+    <h1>ds bingo</h1>
+    <div id="bingodisplay"></div>
+    <script src="/js/ds_bingo.js"></script>
+    <input type="text" placeholder="Seed Goes Here" id="inputField">
+    <p> </p>
+    <button onclick="bingoGen()">bingo please</button>
+</body>
+
+</html>

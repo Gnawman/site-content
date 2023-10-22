@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/hardware.css">
+    <!--#include file="/favicon.html"-->
+    <title>ergodox</title>
+</head>
+<body>
+    <!--#include file="/menu.html"-->
+    <h1>ergodox</h1>
+    <img src="/images/ergodox/ergodox_ez.jpg" alt="half of a split 86-key keyboard. the case and keys are white. the keys are blank - they do not have letters on them">
+    <p>my first nonstandard keyboard! even considering all the weird keyboards I've been through, the biggest adjustment was going from row-staggered qwerty to column-staggered split colemak. has way too many keys for my current taste, but still serves a great purpose as a wasd gaming controller.</p>
+</body>
+
+</html>

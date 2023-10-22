@@ -1,0 +1,12 @@
+/* tables */
+table {
+	border-spacing: 0;
+	margin: auto;
+}
+
+td {
+	border-width: 0px;
+    padding: 0 2ch;
+    height: 4ch;
+    min-width: 20ch;
+}
