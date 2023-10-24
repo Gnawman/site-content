@@ -1,3 +1,11 @@
 :root {
     --feature: #B48EAE;
 }
+
+p {
+	font-family: "Verdana", "Roboto", sans-serif;
+    text-align: justify;
+	width: 64ch;
+    margin: auto;
+    line-height: 1.4
+}
