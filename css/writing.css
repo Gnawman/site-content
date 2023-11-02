@@ -6,6 +6,6 @@ p {
 	font-family: "Verdana", "Roboto", sans-serif;
     text-align: justify;
 	width: 64ch;
-    margin: auto;
+    margin: 1ch auto;
     line-height: 1.4
 }
