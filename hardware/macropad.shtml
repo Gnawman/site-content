@@ -5,13 +5,13 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/hardware.css">
     <!--#include file="/favicon.html"-->
-    <title>enchonker</title>
+    <title>macropad</title>
 </head>
 <body>
     <!--#include file="/menu.html"-->
-    <h1>enchonker</h1>
+    <h1>macropad</h1>
     <img src="/images/enchonker/enchonker_close.jpg" alt="macropad with five buttons and a rotary knob, attached to the edge of a desk. The knob is chonky.">
-    <p>Funny little name for a funny little guy, this fella has been through the wars. The 3d-printed resin he's made of isn't the most structurally sound medium, and it has snapped and had to be superglued back together on three separate occasions. It isn't the prettiest under the hood, as it's all hand-wired and the microcontroller is attached using gaffa tape. With all that said, it's very useful -- especially while using a desktop without dedicated volume buttons.</p>
+    <p>This fella has been through the wars. The 3d-printed resin he's made of isn't the most structurally sound medium, and it has snapped and had to be superglued back together on three separate occasions. It isn't the prettiest under the hood, as it's all hand-wired and the microcontroller is attached using gaffa tape. With all that said, it's very useful -- especially while using a desktop without dedicated volume buttons.</p>
     <br>
     <p>keymap:</p>
     <table>
