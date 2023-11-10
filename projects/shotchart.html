@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/projects.css">
+    <!--#include file="/favicon.html"-->
+    <title>sharpshooter shot chart</title>
+</head>
+<body onload="setup()"> 
+    <!--#include file="/menu.html"-->
+    <h1>sharpshooter shot chart</h1>
+    <script src="/js/shotchart.js"></script>
+    <label for="toHit">to-hit</label>
+    <input type="number" placeholder="0" id="toHit">
+    <br>
+    <label for="damageDice">damage dice</label>
+    <select id="damageDice">
+        <option selected>1</option>
+        <option>1d4</option>
+        <option>1d6</option>
+        <option>1d8</option>
+        <option>1d10</option>
+        <option>1d12</option>
+        <option>2d6</option>
+    </select>
+    <br>
+    <label for="damageMod">damage mod</label>
+    <input type="number" placeholder="0" id="damageMod">
+    <br>
+    <label for="damageModCrit">damage mod</label>
+    <input type="number" placeholder="0" id="damageModCrit">
+    <br>
+    <label for="targetAC">target AC</label>
+    <input type="number" placeholder="0" id="targetAC">
+    <br>
+    <select id="advSelect">
+        <option selected>No Advantage</option>
+        <option>Advantage</option>
+        <option>Triple-Advantage</option>
+        <option>Disadvantage</option>
+    </select>
+    <br>
+    <p id="sharpshootDisplay">NO SHARPSHOOT</p>
+    <br>
+    <p>hit chance adjusted for advantage: </p><div id="hitChance">0</div>
+    <p>damage adjusted for hit chance: </p><div id="finalDamage">0</div>
+    <p>hit chance adjusted for advantage (sharpshooter): </p><div id="hitChanceSharp">0</div>
+    <p>damage adjusted for hit chance (sharpshooter): </p><div id="finalDamageSharp">0</div>
+</body>
+
+</html>
