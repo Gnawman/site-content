@@ -8,3 +8,15 @@ p {
     margin: auto;
     line-height: 1.4
 }
+
+.shotchart-grid {
+    display: grid;
+    width: 64ch;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1ch;
+}
+
+.shotchart-input {
+    margin: auto;
+}
