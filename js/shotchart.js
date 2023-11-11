@@ -11,7 +11,7 @@ function setup() {
 }
 
 // calculates final hit chance using advantage state. Penalty is -5 when sharpshooting
-function hitChanceGet(toHit,toHitPenalty,targetAC,advState) {
+function getHitChance(toHit,toHitPenalty,targetAC,advState) {
     var hitChanceNoClamp = (21 - (targetAC - (toHit+toHitPenalty)))/20;
     var hitChanceRaw = Math.min(Math.max(hitChanceNoClamp, 0.05), 0.95);
     switch (advState) {
@@ -32,7 +32,22 @@ function hitChanceGet(toHit,toHitPenalty,targetAC,advState) {
 };
 
 function getCritDamage(damageDice,damageModCrit,advState) {
-    
+    switch (advState) {
+        case 0:
+            var critChance = 0.05;
+            break;
+        case 1:
+            var critChance = 0.0975;
+            break;
+        case 2:
+            var critChance = 0.142625;
+            break;
+        case 3:
+            var critChance = 0.0025;
+            break;
+    };
+    var critDamage = critChance * ((2*damageDice) + (2*damageModCrit));
+    return critDamage;
 }
 
 function numberWang() {
@@ -49,21 +64,25 @@ function numberWang() {
     var advState = +document.getElementById("advSelect").selectedIndex; 
 
     // uses advantage state to get hit chance without and with sharpshooter
-    var hitChance = hitChanceGet(toHit,0,targetAC,advState);
-    var hitChanceSharp = hitChanceGet(toHit,-5,targetAC,advState);
+    var hitChance = getHitChance(toHit,0,targetAC,advState);
+    var hitChanceSharp = getHitChance(toHit,-5,targetAC,advState);
+
+    // uses advantage state to get weighted crit damage
+    var critDamage = getCritDamage(damageDice,damageModCrit,advState);
 
     var hitDamage = damageDice + damageMod + damageModCrit;
-    var finalDamage = hitChance * hitDamage;
-    var finalDamageSharp = hitChanceSharp * (hitDamage+10);
+    var finalDamage = (hitChance * hitDamage) + critDamage;
+    var finalDamageSharp = (hitChanceSharp * (hitDamage+10)) + critDamage;
 
     if (finalDamageSharp > finalDamage) {
-        sharpshootDisplay = "SHARPSHOOT";
+        sharpshootDisplay = "<h2 style='color:#70A288'>SHARPSHOOT</h2>";
     } else {
-        sharpshootDisplay = "NO SHARPSHOOT";
+        sharpshootDisplay = "<h2 style='color:#B48EAE'> NO SHARPSHOOT</h2>";
     };
 
     document.getElementById("sharpshootDisplay").innerHTML = sharpshootDisplay;    
-
+    
+    document.getElementById("critDamage").innerHTML = critDamage.toFixed(3);
     document.getElementById("hitChance").innerHTML = hitChance.toFixed(3);
     document.getElementById("finalDamage").innerHTML = finalDamage.toFixed(3);
 
