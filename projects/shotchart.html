@@ -11,42 +11,53 @@
     <!--#include file="/menu.html"-->
     <h1>sharpshooter shot chart</h1>
     <script src="/js/shotchart.js"></script>
-    <label for="toHit">to-hit</label>
-    <input type="number" placeholder="0" id="toHit">
-    <br>
-    <label for="damageDice">damage dice</label>
-    <select id="damageDice">
-        <option selected>1</option>
-        <option>1d4</option>
-        <option>1d6</option>
-        <option>1d8</option>
-        <option>1d10</option>
-        <option>1d12</option>
-        <option>2d6</option>
-    </select>
-    <br>
-    <label for="damageMod">damage mod</label>
-    <input type="number" placeholder="0" id="damageMod">
-    <br>
-    <label for="damageModCrit">damage doubled on crit</label>
-    <input type="number" placeholder="0" id="damageModCrit">
-    <br>
-    <label for="targetAC">target AC</label>
-    <input type="number" placeholder="0" id="targetAC">
-    <br>
-    <select id="advSelect">
-        <option selected>No Advantage</option>
-        <option>Advantage</option>
-        <option>Triple-Advantage</option>
-        <option>Disadvantage</option>
-    </select>
-    <br>
-    <p id="sharpshootDisplay">NO SHARPSHOOT</p>
+    <div class="shotchart-grid">
+        <div class="shotchart-input">
+            <label for="toHit">to-hit</label>
+            <input type="number" placeholder="0" id="toHit">
+        </div>
+        <div class="shotchart-input">
+            <label for="damageDice">weapon damage die</label>
+            <br>
+            <select id="damageDice">
+                <option selected>1</option>
+                <option>1d4</option>
+                <option>1d6</option>
+                <option>1d8</option>
+                <option>1d10</option>
+                <option>1d12</option>
+                <option>2d6</option>
+            </select>
+        </div>
+        <div class="shotchart-input">
+            <label for="damageMod">damage from mods</label>
+            <input type="number" placeholder="0" id="damageMod">
+        </div>
+        <div class="shotchart-input">
+            <label for="targetAC">target AC</label>
+            <input type="number" placeholder="0" id="targetAC">
+        </div>
+        <div class="shotchart-input">
+            <label for="advSelect">advantage state</label>
+            <select id="advSelect">
+                <option selected>No Advantage</option>
+                <option>Advantage</option>
+                <option>Triple-Advantage</option>
+                <option>Disadvantage</option>
+            </select>
+        </div>
+        <div class="shotchart-input">
+            <label for="damageModCrit">damage from dice</label>
+            <input type="number" placeholder="0" id="damageModCrit">
+        </div>
+    </div>
+    <div id="sharpshootDisplay"><h2 style='color:#B48EAE'> NO SHARPSHOOT</h2></div>
     <br>
     <p>hit chance adjusted for advantage: </p><div id="hitChance">0</div>
-    <p>damage adjusted for hit chance: </p><div id="finalDamage">0</div>
-    <p>hit chance adjusted for advantage (sharpshooter): </p><div id="hitChanceSharp">0</div>
-    <p>damage adjusted for hit chance (sharpshooter): </p><div id="finalDamageSharp">0</div>
+    <p>average damage: </p><div id="finalDamage">0</div>
+    <p>sharpshooter hit chance: </p><div id="hitChanceSharp">0</div>
+    <p>average sharpshooter damage: </p><div id="finalDamageSharp">0</div>
+    <p>advantage-weighted crit damage: </p><div id="critDamage">0</div>
 </body>
 
 </html>
