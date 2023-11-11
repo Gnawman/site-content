@@ -77,15 +77,15 @@ function numberWang() {
     if (finalDamageSharp > finalDamage) {
         sharpshootDisplay = "<h2 style='color:#70A288'>SHARPSHOOT</h2>";
     } else {
-        sharpshootDisplay = "<h2 style='color:#B48EAE'> NO SHARPSHOOT</h2>";
+        sharpshootDisplay = "<h2 style='color:#B48EAE'> DON'T SHARPSHOOT</h2>";
     };
 
     document.getElementById("sharpshootDisplay").innerHTML = sharpshootDisplay;    
     
-    document.getElementById("critDamage").innerHTML = critDamage.toFixed(3);
-    document.getElementById("hitChance").innerHTML = hitChance.toFixed(3);
-    document.getElementById("finalDamage").innerHTML = finalDamage.toFixed(3);
+    document.getElementById("critDamage").innerHTML = "advantage-weighted crit damage: "+critDamage.toFixed(3);
+    document.getElementById("hitChance").innerHTML = "hit chance adjusted for advantage: "+hitChance.toFixed(3);
+    document.getElementById("finalDamage").innerHTML = "average damage: "+finalDamage.toFixed(3);
 
-    document.getElementById("hitChanceSharp").innerHTML = hitChanceSharp.toFixed(3);
-    document.getElementById("finalDamageSharp").innerHTML = finalDamageSharp.toFixed(3);
+    document.getElementById("hitChanceSharp").innerHTML = "sharpshooter hit chance: "+hitChanceSharp.toFixed(3);
+    document.getElementById("finalDamageSharp").innerHTML = "average sharpshooter damage: "+finalDamageSharp.toFixed(3);
 };
