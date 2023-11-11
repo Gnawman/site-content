@@ -1,5 +1,3 @@
-//TODO crit damage for all advantage scenarios
-
 function setup() {
     //setting up event listeners on every field so any change updates values
     document.getElementById("toHit").addEventListener("input", numberWang);
@@ -10,7 +8,7 @@ function setup() {
     document.getElementById("advSelect").addEventListener("change", numberWang);
 }
 
-// calculates final hit chance using advantage state. Penalty is -5 when sharpshooting
+// calculates final hit chance using advantage state. Penalty should be -5 when sharpshooting
 function getHitChance(toHit,toHitPenalty,targetAC,advState) {
     var hitChanceNoClamp = (21 - (targetAC - (toHit+toHitPenalty)))/20;
     var hitChanceRaw = Math.min(Math.max(hitChanceNoClamp, 0.05), 0.95);
