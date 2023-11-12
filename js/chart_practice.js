@@ -11,22 +11,14 @@ function chartGen() {
         chart += "<line x1='"+ i +"' y1='500' x2='"+ i +"' y2='490' style='stroke:#84857E;stroke-width:2' />";
     }
 
-    var point0 = [50,450];
-    var point1 = [100,425];
-    var point2 = [150,350];
-    var point3 = [200,300];
-    var point4 = [250,225];
-    var point5 = [300,200];
-    var point6 = [350,150];
-    var point7 = [400,125];
-    var point8 = [450,50];
-
-    var linepoints = [point0,point1,point2,point3,point4,point5,point6,point7,point8];
+    var linepoints = [50,450,100,425,150,450,200,250,250,225,300,200,350,150,400,125,450,50];
 
     chart += "<polyline points='"
     // plotting line
-    for (var i=0; i<9; i++) {
-        chart += linepoints[i][0]+","+linepoints[i][1]+" ";
+    for (var i=0; i<18; i++) {
+        chart += linepoints[i]+",";
+        i++;
+        chart +=linepoints[i]+" ";
     };
     chart += "' style='fill:none;stroke:#70A288;stroke-width:3' /></svg>";
     console.log(chart);
