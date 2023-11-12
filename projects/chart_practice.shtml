@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/projects.css">
+    <!--#include file="/favicon.html"-->
+    <title>chart practice</title>
+</head>
+<body onload="chartGen()">
+    <!--#include file="/menu.html"-->
+    <h1>chart practice</h1>
+    <script src="/js/chart_practice.js"></script>
+    <div id="chart"></div>
+</body>
+
+</html>
