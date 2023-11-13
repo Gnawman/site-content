@@ -7,100 +7,128 @@ yellow		#FFEAA8
 */
 
 :root {
-	--offblack: #101217;
-	--offwhite: #F8F7E5;
+	--offblack:#101217;
+	--offwhite:#F8F7E5;
   }
 
 body {
-	font-family: "Lucida Console", "Monaco", "Roboto Mono", monospace;
-	color: var(--offwhite);
-	background-color: var(--offblack);
-	text-align: center;
-	-moz-text-size-adjust: none;
-	text-size-adjust: none;
+	font-family:"Lucida Console", "Monaco", "Roboto Mono", monospace;
+	color:var(--offwhite);
+	background-color:var(--offblack);
+	text-align:center;
+	-moz-text-size-adjust:none;
+	text-size-adjust:none;
 }
 
 p {
-    text-align: justify;
-	width: 64ch;
-    margin: auto;
-    line-height: 1.4
+    text-align:justify;
+	width:650px;
+    margin:auto;
+    line-height:1.4
 }
 
 h1 {
-	color: var(--feature);
+	color:var(--feature);
 }
 
 h3 {
-	font-weight: 400;
+	font-weight:400;
 }
 
 h4 {
-	font-weight: 400;
+	font-weight:400;
 }
 
 /*links*/
 a:link {
-	color: var(--feature);
-	text-decoration: none;
+	color:var(--feature);
+	text-decoration:none;
 }
 
 a:visited {
-	color: var(--feature);
-	text-decoration: none;
+	color:var(--feature);
+	text-decoration:none;
 }
 
 a:hover {
-	color: var(--feature);
-	text-decoration: underline;
+	color:var(--feature);
+	text-decoration:underline;
 }
 
 a:active {
-	color: var(--feature);
-	text-decoration: underline;
+	color:var(--feature);
+	text-decoration:underline;
 }
 
 /*images*/
 img {
-	max-width: 64ch;
+	max-width:650px;
 }
 
 /*buttons*/
 button {
-	background-color: var(--feature);
-	border-radius: 3pt;
-	border: none;
-	font-family: "Lucida Console", Monaco, monospace;
-	text-align: center;
+	background-color:var(--feature);
+	border-radius:4px;
+	border:none;
+	font-family:"Lucida Console", Monaco, monospace;
+	text-align:center;
 }
 
 /*input boxes*/
 input {
-	background-color: var(--offblack);
-	border: 1px solid var(--feature);
-	color: var(--offwhite);
-	text-align: center;
+	background-color:var(--offblack);
+	border:1px solid var(--feature);
+	color:var(--offwhite);
+	text-align:center;
 }
 
 /* tables */
 table {
-	border-spacing: 0;
-	margin: auto;
+	border-spacing:0;
+	margin:auto;
 }
 
 td {
-	border: 1px solid var(--feature);
-	padding: 1em;
-	height: 6em;
-	width: 6em;
+	border:1px solid var(--feature);
+	padding:1em;
+	height:6em;
+	width:6em;
 }
 
 td.blank {
-	border: 1px solid var(--offblack);
+	border:1px solid var(--offblack);
 }
 
 /*custom styling for activated bingo squares*/
 td.highlight {
-	background-color: var(--feature);
-	color: #101217;
+	background-color:var(--feature);
+	color:#101217;
+}
+
+/*accordions*/
+.accordion-button {
+	font-size:16px;
+	width:651px;
+	padding:8px;
+	border:1px solid var(--feature);
+	border-radius:0;
+}
+.accordion-hide {
+	display:none;
+}
+
+.accordion-show {
+	width:650px;
+	margin:auto;
+	padding:8px 0;
+	border:1px solid var(--feature);
+	border-radius:0;
+}
+
+/*grids*/
+.grid {
+    display:grid;
+    width:650px;
+    margin:20px auto;
+    gap:10px;
 }
