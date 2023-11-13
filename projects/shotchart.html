@@ -14,7 +14,7 @@
     <div class="grid" style="grid-template-columns: auto auto auto;">
         <div>
             <label for="toHit">to-hit</label>
-            <input type="number" placeholder="0" id="toHit">
+            <input type="number" value="5" id="toHit">
         </div>
         <div>
             <label for="advSelect">advantage</label>
@@ -27,36 +27,36 @@
         </div>
         <div>
             <label for="damageDice">dice damage</label>
-            <input type="number" placeholder="0" id="damageDice">
+            <input type="number" value="3.5" id="damageDice">
         </div>
         <div>
             <label for="targetAC">target AC</label>
-            <input type="number" placeholder="0" id="targetAC">
+            <input type="number" value="18" id="targetAC">
         </div>
         <div></div>
         <div>
             <label for="damageMod">mod damage</label>
-            <input type="number" placeholder="0" id="damageMod">
+            <input type="number" value="3" id="damageMod">
         </div>
     </div>
     <div class="grid" style="grid-template-columns: auto auto;">
-        <div>
+        <div id="finalDamage">
             average damage<br>no sharpshooter:<br>0
         </div>
-        <div>
+        <div id="finalDamageSharp">
             average damage<br>sharpshooter:<br>0
         </div>
     </div>
 
     <div id="sharpshootDisplay"><h2 style='color:#B48EAE'> DON'T SHARPSHOOT</h2></div>
     <br>
+    <div id="chartDisplay"></div>
+    <br>
     <button onclick="accordion('nerdStats')" class="accordion-button">stats for nerds</button>
     <div id="nerdStats" class="accordion-hide">
         <p id="hitChance">hit chance: 0</p>
-        <p id="finalDamage">average damage: 0</p>
         <p id="hitChanceSharp">sharpshooter hit chance: 0</p>
-        <p id="finalDamageSharp">average sharpshooter damage: 0</p>
-        <p id="critDamage">advantage-weighted crit damage: 0</p>
+        <p id="critDamage">weighted crit damage: 0</p>
     </div>
 </body>
 
