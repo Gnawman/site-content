@@ -11,20 +11,17 @@
 <body>
     <!--#include file="/menu.html"-->
     <h1>satara</h1>
-    <h3>an interview</h3>
-    <h3>by harry</h3>
+    <h4>an interview</h4>
+    <h4>by harry</h4>
     <br>
-    <h4>characters:</h4>
-    <table>
-        <tr>
-            <td style="text-align: right;">SGT. BELSNER</td>
-            <td style="text-align: left;">a police officer</td>
-        </tr>
-        <tr>
-            <td style="text-align: right;">CHARLIE ARTWOOD</td>
-            <td style="text-align: left;">a butcher</td>
-        </tr>
-    </table><br>
+    <div>characters:</div>
+    <div class="grid" style="grid-template-columns: auto auto;">
+        <div style="text-align: right;">SGT. BELSNER, </div>
+        <div style="text-align: left;">a police officer</div>
+        <div style="text-align: right;">CHARLIE ARTWOOD, </div>
+        <div style="text-align: left;">a butcher</div>
+    </div>
+    <br>
     <p>SETTING</p>
     <p>A police interview room. Two chairs face each other across a small table. The scene is lit by a hanging lamp, gently swaying. BELSNER and CHARLIE are seated.
         BELSNER wears a police uniform and writes in a small notebook with the stub of a pencil.
