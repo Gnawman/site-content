@@ -11,34 +11,13 @@
     <!--#include file="/menu.html"-->
     <h1>sharpshooter shot chart</h1>
     <script src="/js/shotchart.js"></script>
-    <div class="shotchart-grid">
-        <div class="shotchart-input">
+    <div class="grid" style="grid-template-columns: auto auto auto;">
+        <div>
             <label for="toHit">to-hit</label>
             <input type="number" placeholder="0" id="toHit">
         </div>
-        <div class="shotchart-input">
-            <label for="damageDice">weapon damage die</label>
-            <br>
-            <select id="damageDice">
-                <option selected>1</option>
-                <option>1d4</option>
-                <option>1d6</option>
-                <option>1d8</option>
-                <option>1d10</option>
-                <option>1d12</option>
-                <option>2d6</option>
-            </select>
-        </div>
-        <div class="shotchart-input">
-            <label for="damageMod">damage from mods</label>
-            <input type="number" placeholder="0" id="damageMod">
-        </div>
-        <div class="shotchart-input">
-            <label for="targetAC">target AC</label>
-            <input type="number" placeholder="0" id="targetAC">
-        </div>
-        <div class="shotchart-input">
-            <label for="advSelect">advantage state</label>
+        <div>
+            <label for="advSelect">advantage</label>
             <select id="advSelect">
                 <option selected>No Advantage</option>
                 <option>Advantage</option>
@@ -46,19 +25,39 @@
                 <option>Disadvantage</option>
             </select>
         </div>
-        <div class="shotchart-input">
-            <label for="damageModCrit">damage from dice</label>
-            <input type="number" placeholder="0" id="damageModCrit">
+        <div>
+            <label for="damageDice">dice damage</label>
+            <input type="number" placeholder="0" id="damageDice">
+        </div>
+        <div>
+            <label for="targetAC">target AC</label>
+            <input type="number" placeholder="0" id="targetAC">
+        </div>
+        <div></div>
+        <div>
+            <label for="damageMod">mod damage</label>
+            <input type="number" placeholder="0" id="damageMod">
         </div>
     </div>
+    <div class="grid" style="grid-template-columns: auto auto;">
+        <div>
+            average damage<br>no sharpshooter:<br>0
+        </div>
+        <div>
+            average damage<br>sharpshooter:<br>0
+        </div>
+    </div>
+
     <div id="sharpshootDisplay"><h2 style='color:#B48EAE'> DON'T SHARPSHOOT</h2></div>
     <br>
-    <p>stats for nerds --</p>
-    <p id="hitChance">hit chance: 0</p>
-    <p id="finalDamage">average damage: 0</p>
-    <p id="hitChanceSharp">sharpshooter hit chance: 0</p>
-    <p id="finalDamageSharp">average sharpshooter damage: 0</p>
-    <p id="critDamage">advantage-weighted crit damage: 0</p>
+    <button onclick="accordion('nerdStats')" class="accordion-button">stats for nerds</button>
+    <div id="nerdStats" class="accordion-hide">
+        <p id="hitChance">hit chance: 0</p>
+        <p id="finalDamage">average damage: 0</p>
+        <p id="hitChanceSharp">sharpshooter hit chance: 0</p>
+        <p id="finalDamageSharp">average sharpshooter damage: 0</p>
+        <p id="critDamage">advantage-weighted crit damage: 0</p>
+    </div>
 </body>
 
 </html>
