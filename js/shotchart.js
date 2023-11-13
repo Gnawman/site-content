@@ -111,14 +111,14 @@ function makeChart() {
     var advState = +document.getElementById("advSelect").selectedIndex; 
 
     var chart = "<svg height='500' width='500'>";
-    chart += "<line x1='0' y1='500' x2='0' y1='0' style='stroke:#84857E;stroke-width:2' />";
+    chart += "<line x1='0' y1='500' x2='0' y2='0' style='stroke:#84857E;stroke-width:2' />";
     chart += "<line x1='0' y1='500' x2='500' y2='500' style='stroke:#84857E;stroke-width:2' />";
     chart += "<line x1='"+ (targetAC-5)*20 +"' y1='500' x2='"+ (targetAC-5)*20 +"' y1='0' style='stroke:#84857E;stroke-width:1' />";
     
     // generating x-axis scale lines
     for (var i=20; i<501; i+=20) {
         chart += "<line x1='"+ i +"' y1='500' x2='"+ i +"' y2='490' style='stroke:#84857E;stroke-width:1' />";
-    }
+    };
 
     var damagePointsRaw = [];
     var damagePointsRawSharp = [];
@@ -129,10 +129,22 @@ function makeChart() {
     };
 
     if (damagePointsRawSharp[0] > damagePointsRaw[0]) {
-        var normaliseRatio = damagePointsRawSharp[0] / 500;
+        var yAxisCase = (~~damagePointsRawSharp[0]+1)
+        var normaliseRatio = yAxisCase / 500;
     } else {
-        var normaliseRatio = damagePointsRaw[0] / 500;
-    }
+        var yAxisCase = (~~damagePointsRaw[0]+1)
+        var normaliseRatio = yAxisCase / 500;
+    };
+
+    var yAxisDecrement = (~~(yAxisCase/5)+1);
+    console.log(yAxisCase);
+    console.log(yAxisDecrement);
+    // generating y-axis scale lines
+//    for (var i=yAxisCase; i>0; i-yAxisDecrement) {
+//        lineHeight = i/normaliseRatio;
+//        chart += "line x1='0' y1='"+i+"' x2=500 y2='"+i+"' style='stroke:#84857E;stroke-width:1' />";
+//        console.log(lineHeight);
+//    };
 
     var damagePointsNormal = [];
     var damagePointsNormalSharp = [];
