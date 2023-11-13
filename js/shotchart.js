@@ -139,12 +139,13 @@ function makeChart() {
     var yAxisDecrement = (~~(yAxisCase/5)+1);
     console.log(yAxisCase);
     console.log(yAxisDecrement);
+    console.log(yAxisCase-yAxisDecrement)
+
     // generating y-axis scale lines
-//    for (var i=yAxisCase; i>0; i-yAxisDecrement) {
-//        lineHeight = i/normaliseRatio;
-//        chart += "line x1='0' y1='"+i+"' x2=500 y2='"+i+"' style='stroke:#84857E;stroke-width:1' />";
-//        console.log(lineHeight);
-//    };
+    for (var i=yAxisCase; i>0; i-=yAxisDecrement) {
+        lineHeight = i/normaliseRatio;
+        chart += "<line x1='0' y1='"+lineHeight+"' x2=500 y2='"+lineHeight+"' style='stroke:#84857E;stroke-width:1' />";
+    };
 
     var damagePointsNormal = [];
     var damagePointsNormalSharp = [];
