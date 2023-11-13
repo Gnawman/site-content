@@ -1,9 +1,8 @@
 function setup() {
     //setting up event listeners on every field so any change updates values
     document.getElementById("toHit").addEventListener("input", numberWang);
-    document.getElementById("damageDice").addEventListener("input", numberWang);
     document.getElementById("damageMod").addEventListener("input", numberWang);
-    document.getElementById("damageModCrit").addEventListener("input", numberWang);
+    document.getElementById("damageDice").addEventListener("input", numberWang);
     document.getElementById("targetAC").addEventListener("input", numberWang);
     document.getElementById("advSelect").addEventListener("change", numberWang);
 }
@@ -29,7 +28,7 @@ function getHitChance(toHit,toHitPenalty,targetAC,advState) {
     return hitChance;
 };
 
-function getCritDamage(damageDice,damageModCrit,advState) {
+function getCritDamage(damageDice,damageMod,advState) {
     switch (advState) {
         case 0:
             var critChance = 0.05;
@@ -44,7 +43,7 @@ function getCritDamage(damageDice,damageModCrit,advState) {
             var critChance = 0.0025;
             break;
     };
-    var critDamage = critChance * ((2*damageDice) + (2*damageModCrit));
+    var critDamage = critChance * ((2 * damageDice) + damageMod);
     return critDamage;
 }
 
@@ -52,12 +51,8 @@ function numberWang() {
     // grabbing variables from input
     var toHit = +document.getElementById("toHit").value;
     var damageMod = +document.getElementById("damageMod").value;
-    var damageModCrit = +document.getElementById("damageModCrit").value;
+    var damageDice = +document.getElementById("damageDice").value;
     var targetAC = +document.getElementById("targetAC").value;
-    // gets inputted index of [1, 1d4, 1d6, 1d8, 1d10, 1d12, 2d6], then sets up array for lookup
-    var damageDiceIndex = document.getElementById("damageDice").selectedIndex;
-    const diceArray = [1,2.5,3.5,4.5,5.5,6.5,7];
-    var damageDice = diceArray.at(damageDiceIndex);
     // returns index of [no advantage, advantage, triple-advantage, disadvantage]
     var advState = +document.getElementById("advSelect").selectedIndex; 
 
@@ -66,9 +61,9 @@ function numberWang() {
     var hitChanceSharp = getHitChance(toHit,-5,targetAC,advState);
 
     // uses advantage state to get weighted crit damage
-    var critDamage = getCritDamage(damageDice,damageModCrit,advState);
+    var critDamage = getCritDamage(damageDice,damageMod,advState);
 
-    var hitDamage = damageDice + damageMod + damageModCrit;
+    var hitDamage = damageDice + damageMod;
     var finalDamage = (hitChance * hitDamage) + critDamage;
     var finalDamageSharp = (hitChanceSharp * (hitDamage+10)) + critDamage;
 
@@ -87,3 +82,12 @@ function numberWang() {
     document.getElementById("hitChanceSharp").innerHTML = "sharpshooter hit chance: "+hitChanceSharp.toFixed(3);
     document.getElementById("finalDamageSharp").innerHTML = "average sharpshooter damage: "+finalDamageSharp.toFixed(3);
 };
+
+function accordion(elementId) {
+    var x = document.getElementById(elementId);
+    if (x.classList.contains("accordion-hide")) {
+        x.className = x.className.replace("accordion-hide", "accordion-show");
+    } else {
+        x.className = x.className.replace("accordion-show", "accordion-hide");
+    }
+}
