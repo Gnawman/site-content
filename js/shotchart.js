@@ -6,9 +6,24 @@ function setup() {
     document.getElementById("targetAC").addEventListener("input", render);
     document.getElementById("advSelect").addEventListener("change", render);
     render();
+    for (i=0; i<26; i++) {
+        var damagePointId = "damagePoint"+i;
+        document.getElementById(damagePointId).addEventListener("mouseover", showDamageTooltip, false);
+        document.getElementById(damagePointId).addEventListener("mouseout", hideDamageTooltip, false);
+    }
 }
 
-// called every time any field updates, calls numberwang, updates display, draws chart
+function showDamageTooltip(evt) {
+    var pos = evt.currentTarget.getBoundingClientRect();
+    console.log(pos);
+};
+
+function hideDamageTooltip(evt) {
+    var pos = evt.currentTarget.getBoundingClientRect();
+    console.log(pos);
+}
+
+// called every time any field updates, calls damageArray, updates display, draws chart
 function render() {
 
     // grabbing variables from input
@@ -19,8 +34,8 @@ function render() {
     // returns index of [no advantage, advantage, triple-advantage, disadvantage]
     var advState = +document.getElementById("advSelect").selectedIndex; 
 
-    //numberWang returns an array as follows [finalDamage,finalDamageSharp,hitChance,hitChanceSharp,critDamage]
-    var returns = numberWang(toHit,damageMod,damageDice,targetAC,advState);
+    //damageArray returns an array as follows [finalDamage,finalDamageSharp,hitChance,hitChanceSharp,critDamage]
+    var returns = damageArray(toHit,damageMod,damageDice,targetAC,advState);
 
     document.getElementById("finalDamage").innerHTML = "average damage<br>no sharpshooter:<br>"+returns[0].toFixed(2);
     document.getElementById("finalDamageSharp").innerHTML = "average damage<br>sharpshooter:<br>"+returns[1].toFixed(2);
@@ -33,7 +48,7 @@ function render() {
 
     document.getElementById("sharpshootDisplay").innerHTML = sharpshootDisplay;
 
-    var chart = makeChart();
+    var chart = makeChart(toHit,damageMod,damageDice,targetAC,advState);
     document.getElementById("chartDisplay").innerHTML = chart;
 
     document.getElementById("hitChance").innerHTML = "normal hit chance: "+returns[2].toFixed(3);
@@ -63,7 +78,7 @@ function getHitChance(toHit,toHitPenalty,targetAC,advState) {
     return hitChance;
 }
 
-// uses hardcoded crit chance to determine crit damage
+// we use advantage state to select hardcoded crit chance and determine crit damage
 function getCritDamage(damageDice,damageMod,advState) {
     switch (advState) {
         case 0:
@@ -83,8 +98,8 @@ function getCritDamage(damageDice,damageMod,advState) {
     return critDamage;
 }
 
-//numberWang returns an array as follows [finalDamage,finalDamageSharp,hitChance,hitChanceSharp,critDamage]
-function numberWang(toHit,damageMod,damageDice,targetAC,advState) {
+//damageArray returns an array as follows [finalDamage,finalDamageSharp,hitChance,hitChanceSharp,critDamage]
+function damageArray(toHit,damageMod,damageDice,targetAC,advState) {
 
     // uses advantage state to get hit chance without and with sharpshooter
     var hitChance = getHitChance(toHit,0,targetAC,advState);
@@ -101,18 +116,13 @@ function numberWang(toHit,damageMod,damageDice,targetAC,advState) {
     return [finalDamage,finalDamageSharp,hitChance,hitChanceSharp,critDamage];
 }
 
-function makeChart() {
-    // grabbing variables from input TODO remove this because it's doubled in render()
-    var toHit = +document.getElementById("toHit").value;
-    var damageMod = +document.getElementById("damageMod").value;
-    var damageDice = +document.getElementById("damageDice").value;
-    var targetAC = +document.getElementById("targetAC").value;
-    // returns index of [no advantage, advantage, triple-advantage, disadvantage]
-    var advState = +document.getElementById("advSelect").selectedIndex; 
+function makeChart(toHit,damageMod,damageDice,targetAC,advState) {
 
+    // setting up size and drawing axes
     var chart = "<svg height='500' width='500'>";
     chart += "<line x1='0' y1='500' x2='0' y2='0' style='stroke:#84857E;stroke-width:2' />";
     chart += "<line x1='0' y1='500' x2='500' y2='500' style='stroke:#84857E;stroke-width:2' />";
+    // drawing line at current targetAC position
     chart += "<line x1='"+ (targetAC-5)*20 +"' y1='500' x2='"+ (targetAC-5)*20 +"' y1='0' style='stroke:#84857E;stroke-width:1' />";
     
     // generating x-axis scale lines
@@ -120,33 +130,39 @@ function makeChart() {
         chart += "<line x1='"+ i +"' y1='500' x2='"+ i +"' y2='490' style='stroke:#84857E;stroke-width:1' />";
     };
 
+    // getting damage points for each value of targetAC 5-30
     var damagePointsRaw = [];
     var damagePointsRawSharp = [];
     for (var i=0; i<26; i++) {
-        //numberWang returns an array as follows [finalDamage,finalDamageSharp,hitChance,hitChanceSharp,critDamage]
-        damagePointsRaw.push(numberWang(toHit,damageMod,damageDice,i+5,advState)[0]);
-        damagePointsRawSharp.push(numberWang(toHit,damageMod,damageDice,i+5,advState)[1]);
+        //damageArray returns an array as follows [finalDamage,finalDamageSharp,hitChance,hitChanceSharp,critDamage]
+        damagePointsRaw.push(damageArray(toHit,damageMod,damageDice,i+5,advState)[0]);
+        damagePointsRawSharp.push(damageArray(toHit,damageMod,damageDice,i+5,advState)[1]);
     };
 
+    // now we begin some numberwang
+    // highest damage will always be attacking 5AC, so we check index [0]
     if (damagePointsRawSharp[0] > damagePointsRaw[0]) {
+        // double bitwiseNOT the highest damage to remove any fractions, then add 1 
         var yAxisCase = (~~damagePointsRawSharp[0]+1)
+        // set up a ratio between that and 500, because that's how tall the chart is
         var normaliseRatio = yAxisCase / 500;
     } else {
+        // normal will only do more damage at 5AC if your to-hit is negative, but it's good to support edge cases
         var yAxisCase = (~~damagePointsRaw[0]+1)
         var normaliseRatio = yAxisCase / 500;
     };
 
+    // now we're really numberwanging
+    // Dividing the yAxis into 5 results in 3-4 lines, which are pleasing and reasonable numbers
     var yAxisDecrement = (~~(yAxisCase/5)+1);
-    console.log(yAxisCase);
-    console.log(yAxisDecrement);
-    console.log(yAxisCase-yAxisDecrement)
 
-    // generating y-axis scale lines
+    // generating y-axis scale lines normalised between 0 and 500
     for (var i=yAxisCase; i>0; i-=yAxisDecrement) {
         lineHeight = i/normaliseRatio;
         chart += "<line x1='0' y1='"+lineHeight+"' x2=500 y2='"+lineHeight+"' style='stroke:#84857E;stroke-width:1' />";
     };
 
+    // and now we normalise the damage points as well
     var damagePointsNormal = [];
     var damagePointsNormalSharp = [];
     for (var i=0; i<26; i++) {
@@ -154,39 +170,50 @@ function makeChart() {
         damagePointsNormalSharp.push(damagePointsRawSharp[i]/normaliseRatio);
     }
 
-    // constructing array of AC & finalDamage pairs
-    var points = [];
+    // constructing arrays of AC & finalDamage pairs for normal and sharpshooter
+    var linePoints = [];
     for (var i=0; i<26; i++) {
-        //numberWang returns an array as follows [finalDamage,finalDamageSharp,hitChance,hitChanceSharp,critDamage]
-        points.push(i*20);
-        points.push(500-damagePointsNormal[i]);
+        linePoints.push(i*20);
+        linePoints.push(500-damagePointsNormal[i]);
     };
 
-    var pointsSharp = [];
+    var linePointsSharp = [];
     for (var i=0; i<26; i++) {
-        //numberWang returns an array as follows [finalDamage,finalDamageSharp,hitChance,hitChanceSharp,critDamage]
-        pointsSharp.push(i*20);
-        pointsSharp.push(500-damagePointsNormalSharp[i]);
+        linePointsSharp.push(i*20);
+        linePointsSharp.push(500-damagePointsNormalSharp[i]);
     };
 
-    // plotting line
+    // drawing lines from the damage points
     chart += "<polyline points='"
     for (var i=0; i<52; i++) {
-        chart += points[i]+",";
+        chart += linePoints[i]+",";
         i++;
-        chart += points[i]+" ";
+        chart += linePoints[i]+" ";
     };
     chart += "' style='fill:none;stroke:#B48EAE;stroke-width:3' />";
 
-    // plotting sharpshooter line
     chart += "<polyline points='"
     for (var i=0; i<52; i++) {
-        chart += pointsSharp[i]+",";
+        chart += linePointsSharp[i]+",";
         i++;
-        chart += pointsSharp[i]+" ";
+        chart += linePointsSharp[i]+" ";
     };
     chart += "' style='fill:none;stroke:#70A288;stroke-width:3' />";
 
+    // drawing points from damage points
+    for (var i=0; i<52;i++) {
+        chart += "<circle id='damagePoint"+i/2+"' cx='"+linePoints[i];
+        i++;
+        chart += "' cy='"+linePoints[i]+"' r='3' style='fill:#B48EAE'/>";
+    };
+
+    for (var i=0; i<52;i++) {
+        chart += "<circle id='damagePointSharp"+i/2+"' cx='"+linePointsSharp[i];
+        i++;
+        chart += "' cy='"+linePointsSharp[i]+"' r='3' style='fill:#70A288' />";
+    };    
+
+    // finally closing the svg 
     chart += "</svg>";
     return chart;
 }
