@@ -8,24 +8,27 @@ function setup() {
     render();
     for (i=0; i<26; i++) {
         var damagePointId = "damagePoint"+i;
+        var damagePointSharpId = "damagePointSharp"+i;
         document.getElementById(damagePointId).addEventListener("mouseover", showDamageTooltip, false);
-        document.getElementById(damagePointId).addEventListener("mouseout", hideDamageTooltip, false);
+        document.getElementById(damagePointSharpId).addEventListener("mouseover", showDamageTooltip, false);
     }
 }
 
 function showDamageTooltip(evt) {
-    var pos = evt.currentTarget.getBoundingClientRect();
-    console.log(pos);
-};
-
-function hideDamageTooltip(evt) {
-    var pos = evt.currentTarget.getBoundingClientRect();
-    console.log(pos);
+    var pointPos = evt.currentTarget.getBoundingClientRect();
+    var pointDamage = +evt.currentTarget.dataset.damage;
+    var chartPos = document.getElementById("chart").getBoundingClientRect();
+    console.log(chartPos.y);
+    var tooltipDamage = document.getElementById("tooltipDamage");
+    tooltipDamage.style.left = window.scrollX + pointPos.x - 8 + "px";
+    tooltipDamage.style.top = window.scrollY + pointPos.y - 16 + "px";
+    tooltipDamage.style.display = "block";
+    tooltipDamage.innerHTML = pointDamage.toFixed(2);
+//    console.log(pointPos,chartPos);
 }
 
 // called every time any field updates, calls damageArray, updates display, draws chart
 function render() {
-
     // grabbing variables from input
     var toHit = +document.getElementById("toHit").value;
     var damageMod = +document.getElementById("damageMod").value;
@@ -119,7 +122,7 @@ function damageArray(toHit,damageMod,damageDice,targetAC,advState) {
 function makeChart(toHit,damageMod,damageDice,targetAC,advState) {
 
     // setting up size and drawing axes
-    var chart = "<svg height='500' width='500'>";
+    var chart = "<svg height='500' width='500' id='chart'>";
     chart += "<line x1='0' y1='500' x2='0' y2='0' style='stroke:#84857E;stroke-width:2' />";
     chart += "<line x1='0' y1='500' x2='500' y2='500' style='stroke:#84857E;stroke-width:2' />";
     // drawing line at current targetAC position
@@ -127,7 +130,7 @@ function makeChart(toHit,damageMod,damageDice,targetAC,advState) {
     
     // generating x-axis scale lines
     for (var i=20; i<501; i+=20) {
-        chart += "<line x1='"+ i +"' y1='500' x2='"+ i +"' y2='490' style='stroke:#84857E;stroke-width:1' />";
+        chart += "<line id='xScaleLine"+i+"' x1='"+ i +"' y1='500' x2='"+ i +"' y2='490' style='stroke:#84857E;stroke-width:1' />";
     };
 
     // getting damage points for each value of targetAC 5-30
@@ -158,8 +161,11 @@ function makeChart(toHit,damageMod,damageDice,targetAC,advState) {
 
     // generating y-axis scale lines normalised between 0 and 500
     for (var i=yAxisCase; i>0; i-=yAxisDecrement) {
+        var x = 0;
         lineHeight = i/normaliseRatio;
-        chart += "<line x1='0' y1='"+lineHeight+"' x2=500 y2='"+lineHeight+"' style='stroke:#84857E;stroke-width:1' />";
+        chart += "<line id='yAxisLine'" + x + "' x1='0' y1='"+lineHeight+"' x2=500 y2='"+lineHeight+"' style='stroke:#84857E;stroke-width:1' />";
+        
+        x += 1;
     };
 
     // and now we normalise the damage points as well
@@ -202,13 +208,13 @@ function makeChart(toHit,damageMod,damageDice,targetAC,advState) {
 
     // drawing points from damage points
     for (var i=0; i<52;i++) {
-        chart += "<circle id='damagePoint"+i/2+"' cx='"+linePoints[i];
+        chart += "<circle data-damage='"+damagePointsRaw[i/2]+"' id='damagePoint"+i/2+"' cx='"+linePoints[i];
         i++;
-        chart += "' cy='"+linePoints[i]+"' r='3' style='fill:#B48EAE'/>";
+        chart += "' cy='"+linePoints[i]+"' r='3' style='fill:#B48EAE' />";
     };
 
     for (var i=0; i<52;i++) {
-        chart += "<circle id='damagePointSharp"+i/2+"' cx='"+linePointsSharp[i];
+        chart += "<circle data-damage='"+damagePointsRawSharp[i/2]+"' id='damagePointSharp"+i/2+"' cx='"+linePointsSharp[i];
         i++;
         chart += "' cy='"+linePointsSharp[i]+"' r='3' style='fill:#70A288' />";
     };    

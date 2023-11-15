@@ -132,3 +132,10 @@ td.highlight {
     margin:20px auto;
     gap:10px;
 }
+
+.tooltip {
+	position: absolute;
+	width:100px;
+	height:16px;
+	display: none;
+}
