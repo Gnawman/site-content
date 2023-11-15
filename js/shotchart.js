@@ -6,12 +6,6 @@ function setup() {
     document.getElementById("targetAC").addEventListener("input", render);
     document.getElementById("advSelect").addEventListener("change", render);
     render();
-    for (i=0; i<26; i++) {
-        var damagePointId = "damagePoint"+i;
-        var damagePointSharpId = "damagePointSharp"+i;
-        document.getElementById(damagePointId).addEventListener("mouseover", showDamageTooltip, false);
-        document.getElementById(damagePointSharpId).addEventListener("mouseover", showDamageTooltip, false);
-    }
 }
 
 function showDamageTooltip(evt) {
@@ -52,7 +46,14 @@ function render() {
     document.getElementById("sharpshootDisplay").innerHTML = sharpshootDisplay;
 
     var chart = makeChart(toHit,damageMod,damageDice,targetAC,advState);
-    document.getElementById("chartDisplay").innerHTML = chart;
+    document.getElementById("chartDisplay").innerHTML = "<svg height='500' width='500' id='chart'>"+chart[0]+chart[1]+"</svg>";
+
+    for (i=0; i<26; i++) {
+        var damagePointId = "damagePoint"+i;
+        var damagePointSharpId = "damagePointSharp"+i;
+        document.getElementById(damagePointId).addEventListener("mouseover", showDamageTooltip, false);
+        document.getElementById(damagePointSharpId).addEventListener("mouseover", showDamageTooltip, false);
+    }
 
     document.getElementById("hitChance").innerHTML = "normal hit chance: "+returns[2].toFixed(3);
     document.getElementById("hitChanceSharp").innerHTML = "sharpshooter hit chance: "+returns[3].toFixed(3);
@@ -122,8 +123,7 @@ function damageArray(toHit,damageMod,damageDice,targetAC,advState) {
 function makeChart(toHit,damageMod,damageDice,targetAC,advState) {
 
     // setting up size and drawing axes
-    var chart = "<svg height='500' width='500' id='chart'>";
-    chart += "<line x1='0' y1='500' x2='0' y2='0' style='stroke:#84857E;stroke-width:2' />";
+    var chart = "<line x1='0' y1='500' x2='0' y2='0' style='stroke:#84857E;stroke-width:2' />";
     chart += "<line x1='0' y1='500' x2='500' y2='500' style='stroke:#84857E;stroke-width:2' />";
     // drawing line at current targetAC position
     chart += "<line x1='"+ (targetAC-5)*20 +"' y1='500' x2='"+ (targetAC-5)*20 +"' y1='0' style='stroke:#84857E;stroke-width:1' />";
@@ -159,12 +159,13 @@ function makeChart(toHit,damageMod,damageDice,targetAC,advState) {
     // Dividing the yAxis into 5 results in 3-4 lines, which are pleasing and reasonable numbers
     var yAxisDecrement = (~~(yAxisCase/5)+1);
 
+    var yAxisLabels = "";
     // generating y-axis scale lines normalised between 0 and 500
     for (var i=yAxisCase; i>0; i-=yAxisDecrement) {
         var x = 0;
         lineHeight = i/normaliseRatio;
         chart += "<line id='yAxisLine'" + x + "' x1='0' y1='"+lineHeight+"' x2=500 y2='"+lineHeight+"' style='stroke:#84857E;stroke-width:1' />";
-        
+        yAxisLabels += "<text style='fill:#FFEAA8' x='2' y='"+(lineHeight-3)+"'>"+(yAxisCase-i)+"</text>"
         x += 1;
     };
 
@@ -219,9 +220,8 @@ function makeChart(toHit,damageMod,damageDice,targetAC,advState) {
         chart += "' cy='"+linePointsSharp[i]+"' r='3' style='fill:#70A288' />";
     };    
 
-    // finally closing the svg 
-    chart += "</svg>";
-    return chart;
+    // finally closing the svg
+    return [chart,yAxisLabels];
 }
 
 function accordion(elementId) {
