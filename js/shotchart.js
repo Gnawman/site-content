@@ -165,7 +165,7 @@ function makeChart(toHit,damageMod,damageDice,targetAC,advState) {
         var x = 0;
         lineHeight = i/normaliseRatio;
         chart += "<line id='yAxisLine'" + x + "' x1='0' y1='"+lineHeight+"' x2=500 y2='"+lineHeight+"' style='stroke:#84857E;stroke-width:1' />";
-        yAxisLabels += "<text style='fill:#FFEAA8' x='2' y='"+(lineHeight-3)+"'>"+(yAxisCase-i)+"</text>"
+        yAxisLabels += "<text style='fill:#84857E' x='2' y='"+(lineHeight-3)+"'>"+(yAxisCase-i)+"</text>"
         x += 1;
     };
 
