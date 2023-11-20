@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/projects.css">
+    <!--#include file="/favicon.html"-->
+    <title>animation practice</title>
+</head>
+<body onload="setup()">
+    <!--#include file="/menu.html"-->
+    <h1>animation practice</h1>
+    <script src="/js/animation_practice.js"></script>
+    <svg width="200" height="200">
+        <polygon points="100,100 100,150 150,150 150,100" fill=var(--feature)>
+            <animateTransform attributeName="transform"
+            type="rotate"
+            values="0 125 125; 720 125 125"
+            keyTimes="0; 1"
+            keySplines="0.75 0 0.75 1"
+            dur="4s"
+            calcMode="spline"
+            begin="indefinite"
+            id="anim"/>
+        </polygon>
+    </svg>
+    <button onclick="speen()">speen</button>
+</body>
+
+</html>
