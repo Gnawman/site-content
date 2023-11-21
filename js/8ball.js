@@ -3,10 +3,10 @@ function setup() {
 }
 
 function createCarousel(optionList) {
+    console.log(optionList);
     var elements = document.getElementsByClassName("carousel-item");
     while (elements[0]) elements[0].parentNode.removeChild(elements[0]);
     var speenTime = 4;
-    console.log(optionList);
     var array = shuffle(optionList);
     console.log(array);
     for (var i = 0; i < array.length; i++) {
