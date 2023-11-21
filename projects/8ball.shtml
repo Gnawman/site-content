@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/projects.css">
     <!--#include file="/favicon.html"-->
-    <title>animation practice</title>
+    <title>8ball</title>
 </head>
 <body onload="setup()">
     <!--#include file="/menu.html"-->
