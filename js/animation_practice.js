@@ -22,7 +22,9 @@ function createCarousel(optionList) {
 
         var anim = document.createElementNS("http://www.w3.org/2000/svg", "animateMotion");
         anim.setAttribute("id","carousel"+(i));
-        anim.setAttribute("dur",(speenTime/array.length)+"s");
+        var arrayTriangle = (array.length*(array.length+1))/2;
+        var timeRatio = (i+1)/arrayTriangle;
+        anim.setAttribute("dur",speenTime*timeRatio+"s");
         anim.setAttribute("begin","indefinite");
         anim.setAttribute("path","m 0,0 0,200");
         if (i !== 0 ) {
