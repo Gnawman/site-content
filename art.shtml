@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/art.css">
+    <!--#include file="/favicon.html"-->
+    <title>art</title>
+</head>
+<body>
+    <!--#include file="/menu.html"-->
+    <h1>art</h1>
+    <h4>here is some art i've gone and done</h4>
+    <a href="/art/littlemen.shtml">little men</a>
+</body>
+
+</html>
