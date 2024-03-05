@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/art.css">
+    <!--#include file="/favicon.html"-->
+    <title>dnd minis</title>
+</head>
+<body>
+    <!--#include file="/menu.html"-->
+    <h1>dnd minis</h1>
+    <p>my devotion paladin, sunsword still in progress</p>
+    <img src="/images/miniatures/dnd/orvo_front.jpg" alt="miniature of a man with a chain shirt, green cloak, and wavy sword">
+    <img src="/images/miniatures/dnd/orvo_side.jpg" alt="same miniature, viewed from the side">
+    <img src="/images/miniatures/dnd/orvo_back.jpg" alt="same miniature, viewed from the back">
+</body>
+</html>
