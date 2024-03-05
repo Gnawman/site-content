@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/art.css">
+    <!--#include file="/favicon.html"-->
+    <title>vehicles</title>
+</head>
+<body>
+    <!--#include file="/menu.html"-->
+    <h1>vehicles</h1>
+    <img src="/images/miniatures/vehicles/sentinelbarrel_unpainted_1.jpg" alt="unpainted sentinel with one foot on a stack of barrels">
+    <img src="/images/miniatures/vehicles/sentinelbarrel_unpainted_3.jpg" alt="unpainted sentinel with one foot on a stack of barrels. it is wearing a tiny cowboy hat">
+</body>
+</html>

@@ -10,7 +10,10 @@
 <body>
     <!--#include file="/menu.html"-->
     <h1>miniatures</h1>
-    <p>this is where I would put photos of my little men if I had any</p>
+    <p>I paint miniatures. It began with a starter kit of three space marines and has progressed to a 3d-printed imperial guard army. It currently stands at about 520 points, though so far only one infantry squad is painted...</p>
+    <h3>galleries</h3>
+    <a href="/art/miniatures/infantrysquad.shtml">infantry squad</a><br>
+    <a href="/art/miniatures/vehicles.shtml">vehicles</a><br>
+    <a href="/art/miniatures/workspace.shtml">workspace</a>
 </body>
-
 </html>
