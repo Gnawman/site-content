@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/art.css">
+    <!--#include file="/favicon.html"-->
+    <title>lightbox test</title>
+</head>
+<body onload="setup()">
+    <script src="/js/lightbox.js"></script>
+    <!--#include file="/menu.html"-->
+    <h1>lightbox test</h1>
+    <p>I test the lightbox</p>
+    <img class="lightbox_thumb" src="/images/thumbs/temp/fullres.jpg" alt="the text 'thumb' in green text on white background">
+    <img class="lightbox_thumb" src="/images/thumbs/temp/fullres2.jpg" alt="the text 'thumb 2' in green text on white background">
+    <img class="lightbox_thumb" src="/images/thumbs/temp/fullres2.jpg" alt="the text 'thumb 2' in green text on white background">
+    <img class="lightbox_thumb" src="/images/thumbs/temp/fullres2.jpg" alt="the text 'thumb 2' in green text on white background">
+    <img class="lightbox_thumb" src="/images/thumbs/temp/fullres2.jpg" alt="the text 'thumb 2' in green text on white background">
+    <img class="lightbox_thumb" src="/images/thumbs/temp/fullres2.jpg" alt="the text 'thumb 2' in green text on white background">
+    <img class="lightbox_thumb" src="/images/thumbs/temp/fullres2.jpg" alt="the text 'thumb 2' in green text on white background">
+    <img class="lightbox_thumb" src="/images/thumbs/temp/fullres2.jpg" alt="the text 'thumb 2' in green text on white background">
+    <img class="lightbox_thumb" src="/images/thumbs/temp/fullres2.jpg" alt="the text 'thumb 2' in green text on white background">
+    <div onclick="hidelightbox()" id="lightbox_background" style="z-index: 10; background-color: #000000; opacity: 0.75; height:100vh; width:100vw; position:fixed; top:0px; left:0px; display:none"></div>
+    <img onclick="hidelightbox()" id="lightbox_img" style="z-index: 11; display:none; position:fixed; top:50%; left:50%; transform: translate(-50%, -50%);">
+</body>
+</html>
