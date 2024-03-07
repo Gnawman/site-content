@@ -7,12 +7,14 @@
     <!--#include file="/favicon.html"-->
     <title>dnd minis</title>
 </head>
-<body>
+<body onload="lightboxsetup()">
     <!--#include file="/menu.html"-->
+    <script src="/js/lightbox.js"></script>
     <h1>dnd minis</h1>
+    <h4>gallery - click thumbnails for full-sized images</h4>
     <p>my devotion paladin, sunsword still in progress</p>
-    <img src="/images/miniatures/dnd/orvo_front.jpg" alt="miniature of a man with a chain shirt, green cloak, and wavy sword">
-    <img src="/images/miniatures/dnd/orvo_side.jpg" alt="same miniature, viewed from the side">
-    <img src="/images/miniatures/dnd/orvo_back.jpg" alt="same miniature, viewed from the back">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/dnd/orvo_front.jpg" alt="miniature of a man with a chain shirt, green cloak, and wavy sword">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/dnd/orvo_side.jpg" alt="same miniature, viewed from the side">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/dnd/orvo_back.jpg" alt="same miniature, viewed from the back">
 </body>
 </html>

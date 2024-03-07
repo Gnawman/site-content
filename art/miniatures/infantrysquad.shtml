@@ -7,16 +7,18 @@
     <!--#include file="/favicon.html"-->
     <title>infantry squad</title>
 </head>
-<body>
+<body onload="lightboxsetup()">
     <!--#include file="/menu.html"-->
+    <script src="/js/lightbox.js"></script>
     <h1>infantry squad</h1>
-    <img src="/images/miniatures/guard/squad1_done.jpg" alt="ten fully painted imperial guard models">
+    <h4>gallery - click thumbnails for full-sized images</h4>
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/squad1_done.jpg" alt="ten fully painted imperial guard models">
     <br>
-    <img src="/images/miniatures/guard/squad1card1_done.jpg" alt="imperial guard model with miniature card on helmet">
-    <img src="/images/miniatures/guard/squad1card2_done.jpg" alt="imperial guard model with two miniature cards on helmet">
-    <img src="/images/miniatures/guard/squad1vox_done.jpg" alt="imperial guard model with kitbashed vox-caster">
-    <img src="/images/miniatures/guard/squad1sarge_done.jpg" alt="imperial guard sergeant with plasma pistol">
-    <img src="/images/miniatures/guard/squad1las_done.jpg" alt="imperial guard model with lasgun">
-    <img src="/images/miniatures/guard/squad1plas_done.jpg" alt="imperial guard model with plasma gun">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/squad1card1_done.jpg" alt="imperial guard model with miniature card on helmet">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/squad1card2_done.jpg" alt="imperial guard model with two miniature cards on helmet">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/squad1vox_done.jpg" alt="imperial guard model with kitbashed vox-caster">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/squad1sarge_done.jpg" alt="imperial guard sergeant with plasma pistol">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/squad1las_done.jpg" alt="imperial guard model with lasgun">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/squad1plas_done.jpg" alt="imperial guard model with plasma gun">
 </body>
 </html>

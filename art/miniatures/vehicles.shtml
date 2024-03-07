@@ -7,10 +7,12 @@
     <!--#include file="/favicon.html"-->
     <title>vehicles</title>
 </head>
-<body>
+<body onload="lightboxsetup()">
     <!--#include file="/menu.html"-->
+    <script src="/js/lightbox.js"></script>
     <h1>vehicles</h1>
-    <img src="/images/miniatures/vehicles/sentinelbarrel_unpainted_1.jpg" alt="unpainted sentinel with one foot on a stack of barrels">
-    <img src="/images/miniatures/vehicles/sentinelbarrel_unpainted_3.jpg" alt="unpainted sentinel with one foot on a stack of barrels. it is wearing a tiny cowboy hat">
+    <h4>gallery - click thumbnails for full-sized images</h4>
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/vehicles/sentinelbarrel_unpainted_1.jpg" alt="unpainted sentinel with one foot on a stack of barrels">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/vehicles/sentinelbarrel_unpainted_3.jpg" alt="unpainted sentinel with one foot on a stack of barrels. it is wearing a tiny cowboy hat">
 </body>
 </html>

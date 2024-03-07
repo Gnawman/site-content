@@ -7,19 +7,21 @@
     <!--#include file="/favicon.html"-->
     <title>workspace</title>
 </head>
-<body>
+<body onload="lightboxsetup()">
     <!--#include file="/menu.html"-->
+    <script src="/js/lightbox.js"></script>
     <h1>workspace</h1>
-    <p>please forgive the union jack mug, it was a gift</p>
-    <img src="/images/miniatures/workspace/paintingstation_upstairs.jpg" alt="softly-lit painting station on a small desk">
+    <h4>gallery - click thumbnails for full-sized images</h4>
+    <p class="gallery-description">please forgive the union jack mug, it was a gift</p>
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/workspace/paintingstation_upstairs.jpg" alt="softly-lit painting station on a small desk">
     <br><br>
-    <p>sometimes I paint at the coffee table while the other half watches dramas</p>
-    <img src="/images/miniatures/workspace/paintingstation_downstairs.jpg" alt="softly-lit painting station on a coffee table">
+    <p class="gallery-description">sometimes I paint at the coffee table while the other half watches dramas</p>
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/workspace/paintingstation_downstairs.jpg" alt="softly-lit painting station on a coffee table">
     <br><br>
-    <p>or at my mates' place while we watch shit movies</p>
-    <img src="/images/miniatures/workspace/paintingstation_goodies.jpg" alt="softly-lit painting station on a coffee table">
+    <p class="gallery-description">or at my mates' place while we watch shit movies</p>
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/workspace/paintingstation_goodies.jpg" alt="softly-lit painting station on a coffee table">
     <br><br>
-    <p>forbidden strawberry milk</p>
-    <img src="/images/miniatures/workspace/forbiddenstrawberrymilk.jpg" alt="a mug filled with pink-tinged paint water. it looks like strawberry milk">
+    <p class="gallery-description">forbidden strawberry milk</p>
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/workspace/forbiddenstrawberrymilk.jpg" alt="a mug filled with pink-tinged paint water. it looks like strawberry milk">
 </body>
 </html>

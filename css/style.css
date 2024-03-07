@@ -39,7 +39,7 @@ h4 {
 	font-weight:400;
 }
 
-/*links*/
+/* links */
 a:link {
 	color:var(--feature);
 	text-decoration:none;
@@ -60,12 +60,12 @@ a:active {
 	text-decoration:underline;
 }
 
-/*images*/
+/* images */
 img {
 	max-width:650px;
 }
 
-/*buttons*/
+/* buttons */
 button {
 	background-color:var(--feature);
 	border-radius:4px;
@@ -74,7 +74,7 @@ button {
 	text-align:center;
 }
 
-/*input boxes*/
+/* input boxes */
 input {
 	background-color:var(--offblack);
 	border:1px solid var(--feature);
@@ -99,13 +99,13 @@ td.blank {
 	border:1px solid var(--offblack);
 }
 
-/*custom styling for activated bingo squares*/
+/* custom styling for activated bingo squares */
 td.highlight {
 	background-color:var(--feature);
 	color:#101217;
 }
 
-/*accordions*/
+/* accordions */
 .accordion-button {
 	font-size:16px;
 	width:651px;
@@ -125,6 +125,42 @@ td.highlight {
 	border-radius:0;
 }
 
+/* lightboxes and galleries */
+.lightbox-thumb {
+	max-height:150px;
+	width:auto;
+	height:auto;
+}
+
+.lightbox-background {
+	z-index:10;
+	background-color:#000000;
+	opacity:0.75;
+	height:100vh;
+	width:100vw;
+	position:fixed;
+	top:0px; 
+	left:0px;
+	display:none;
+}
+
+.lightbox-img {
+	z-index:11;
+	display:none;
+	position:fixed;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	max-height:90vh;
+	max-width:90vw;
+	width:auto;
+	height: auto;
+}
+
+.gallery-description {
+	width: 350px;
+}
+
 /*grids*/
 .grid {
     display:grid;
@@ -134,8 +170,8 @@ td.highlight {
 }
 
 .tooltip {
-	position: absolute;
+	position:absolute;
 	width:100px;
 	height:16px;
-	display: none;
+	display:none;
 }
