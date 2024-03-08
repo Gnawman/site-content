@@ -11,9 +11,8 @@
     <!--#include file="/menu.html"-->
     <h1>hardware</h1>
     <h3>current daily drivers:</h3>
-    <h4><a href="/hardware/bevel.shtml">bevel</a></h4>
     <h4><a href="/hardware/ergodox.shtml">ergodox ez</a></h4>
-    <h4><a href="/hardware/macropad.shtml">macropad</a></h4>
+    <h4></h4>
     <br>
     <h3>in-progress and previous projects:</h3>
     <table>
@@ -23,13 +22,23 @@
             <th>notes</th>
         </tr>
         <tr>
+            <td><a href="/hardware/bevel.shtml">bevel</a></td>
+            <td>retired</td>
+            <td>30% keyboard by me <a href="https://github.com/Gnawman/qmk_firmware/tree/gnawman/keyboards/bevel">(github)</a></td>
+        </tr>
+        <tr>
+            <td><a href="/hardware/macropad.shtml">macropad</a></td>
+            <td>retired</td>
+            <td>desk-mounted macropad</td>
+        </tr>
+        <tr>
             <td>gherkin</td>
-            <td>not in use</td>
+            <td>retired</td>
             <td>30% keyboard, more info can be found at <a href="https://www.40percent.club/2016/11/gherkin.html">40percent.club</a></td>
         </tr>
         <tr>
             <td>corne</td>
-            <td>not in use</td>
+            <td>retired</td>
             <td>40% keyboard by foostan. more info at their <a href="https://github.com/foostan/crkbd">github</a></td>
         </tr>
     </table>
