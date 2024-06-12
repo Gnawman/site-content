@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/projects.css">
+    <!--#include file="/favicon.html"-->
+    <title>namegen</title>
+</head>
+<body onload="returnPhoname()">
+    <!--#include file="/menu.html"-->
+    <h1>phonames</h1>
+    <p id="namedisplay"></p>
+    <script src="/js/phonames.js"></script>
+    <button onclick="returnPhoname()">another one</button>
+</body>
+
+</html>
