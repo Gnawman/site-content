@@ -1,35 +1,43 @@
 function returnPhoname() {
     // TODO replace this with reading from a dropdown or button
-    var spice = 0.5;
+    var lengthWeight = 0.7;
+    var spice = 0;
 
-    var firstName = constructPhoname(spice);
-    var secondName = constructPhoname(spice);
+    var firstName = constructPhoname(lengthWeight,spice);
+    var secondName = constructPhoname(lengthWeight,spice);
     var fullName = firstName.concat(" ", secondName);
 
     document.getElementById('namedisplay').innerHTML = fullName;
 }
 
-function constructPhoname(spice) {
+function constructPhoname(lengthWeight,spice) {
     var name = [];
 
-    name+=constructPhoneme();
+    name+=constructPhoneme(spice);
 
     while (true) {
-        if (Math.random() > 0.5) {
+        if (Math.random() < lengthWeight) {
             name+=constructPhoneme();
+            lengthWeight = lengthWeight - 0.34;
         } else {
-            console.log(name);
+            if (name.length == 1) {
+                name+=constructPhoneme();
+                console.log("NOT JUST VOWEL")
+            }
             return name;
         }
     }
 }
 
-function constructPhoneme() {
+function constructPhoneme(spice) {
     var phoneme = []
-    var consonants = ["b","d","f","g","h","j","k","l","m","n","ng","p","r","s","t","v","w","y","z","zh","ch","sh","th"];
+    var consonants = ["b","d","f","g","h","l","m","n","p","r","s","t","y"];
+    if (spice == 1) {
+        consonants = consonants.concat("ng","zh","ch","sh","th","z","w","v","j","k");
+    }
     var vowels = ["a","e","i","o","u"];
 
-    if (Math.random() > 0.2) {
+    if (Math.random() > 0.3) {
         phoneme+=consonants[Math.floor(Math.random() * consonants.length)];
         phoneme+=vowels[Math.floor(Math.random() * vowels.length)];
     } else {
@@ -38,7 +46,5 @@ function constructPhoneme() {
     if (Math.random() > 0.3) {
         phoneme+=consonants[Math.floor(Math.random() * consonants.length)];
     }
-
-    console.log(phoneme);
     return phoneme;
 }
