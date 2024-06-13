@@ -1,7 +1,7 @@
 function returnPhoname() {
     // TODO replace this with reading from a dropdown or button
-    var lengthWeight = 0.7;
-    var spice = 0;
+    var lengthWeight = 0.8;
+    var spice = 1;
 
     var firstName = constructPhoname(lengthWeight,spice);
     var secondName = constructPhoname(lengthWeight,spice);
@@ -18,7 +18,7 @@ function constructPhoname(lengthWeight,spice) {
     while (true) {
         if (Math.random() < lengthWeight) {
             name+=constructPhoneme();
-            lengthWeight = lengthWeight - 0.34;
+            lengthWeight = lengthWeight - 0.39;
         } else {
             if (name.length == 1) {
                 name+=constructPhoneme();
@@ -37,13 +37,13 @@ function constructPhoneme(spice) {
     }
     var vowels = ["a","e","i","o","u"];
 
-    if (Math.random() > 0.3) {
+    if (Math.random() < 0.7) {
         phoneme+=consonants[Math.floor(Math.random() * consonants.length)];
         phoneme+=vowels[Math.floor(Math.random() * vowels.length)];
     } else {
         phoneme+=vowels[Math.floor(Math.random() * vowels.length)];
     }
-    if (Math.random() > 0.3) {
+    if (Math.random() < 0.7) {
         phoneme+=consonants[Math.floor(Math.random() * consonants.length)];
     }
     return phoneme;
