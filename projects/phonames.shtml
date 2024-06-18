@@ -5,11 +5,18 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/projects.css">
     <!--#include file="/favicon.html"-->
-    <title>namegen</title>
+    <title>phonames</title>
 </head>
 <body onload="returnPhoname()">
     <!--#include file="/menu.html"-->
     <h1>phonames</h1>
+    <div>
+        <label for="spice">spice</label>
+        <input type="number" value="70" id="spice">
+    </div>
+    <br>
+    <p>note, spice should probably be between 60 and 80</p>
+    <br><br>
     <p id="namedisplay"></p>
     <script src="/js/phonames.js"></script>
     <button onclick="returnPhoname()">another one</button>
