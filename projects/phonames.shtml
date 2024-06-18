@@ -16,10 +16,10 @@
     <br><br><br>
     <div>
         <label for="spice">spice</label>
-        <input type="number" value="70" id="spice">
+        <input type="number" value="80" id="spice">
     </div>
     <br>
-    <p>note, spice should probably be between 60 and 80</p>
+    <p>note, spice should probably be between 70 and 90</p>
 </body>
 
 </html>
