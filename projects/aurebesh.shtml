@@ -6,12 +6,22 @@
     <link rel="stylesheet" href="/projects.css">
     <!--#include file="/favicon.html"-->
     <title>aurebesh</title>
+    <style>
+        @font-face { font-family: aurebesh; src: url('aurebesh.otf'); }
+    </style>
 </head>
-<body onload="setup()">
+<body onload="getword()">
     <!--#include file="/menu.html"-->
     <h1>aurebesh</h1>
+    <p id="worddisplay"></p>
     <script src="/js/aurebesh.js"></script>
-
+    <div>
+        <label for="spice">spice</label>
+        <input type="number" value="50" id="spice">
+    </div>
+    <button onclick="getword()" style="font-family:aurebesh">another one</button>
+    <p hidden id="wordlist">Sketch,Rathleen,Den</p>
+    
 
 </body>
 
