@@ -10,8 +10,12 @@
 <body>
     <!--#include file="/menu.html"-->
     <h1>art</h1>
-    <h4>here is some art i've gone and done</h4>
-    <a href="/art/miniatures.shtml">miniatures</a>
+    <p>I paint miniatures. Most of them are 3d-printed Imperial Guard for Warhammer 40k, but there's a DnD paladin in there as well.</p>
+    <h3>galleries</h3>
+    <a href="/art/miniatures/infantrysquad.shtml">infantry squad</a><br>
+    <a href="/art/miniatures/vehicles.shtml">vehicles</a><br>
+    <a href="/art/miniatures/workspace.shtml">workspace</a><br>
+    <a href="/art/miniatures/dnd.shtml">dnd minis</a>
 </body>
 
 </html>

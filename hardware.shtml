@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-AU">
-
 <head>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/hardware.css">
@@ -10,11 +9,38 @@
 <body>
     <!--#include file="/menu.html"-->
     <h1>hardware</h1>
-    <h3>current daily drivers:</h3>
-    <h4><a href="/hardware/ergodox.shtml">ergodox ez</a></h4>
-    <h4></h4>
+    <h3>in use:</h3>
+    <table>
+        <tr>
+            <th>name</th>
+            <th>status</th>
+            <th>notes</th>
+        </tr>
+        <tr>
+            <td><a href="/hardware/skink">skink</a></td>
+            <td>travel keyboard</td>
+            <td>board by me<br><br><a href="https://github.com/Gnawman/qmk_firmware/tree/gnawman/keyboards/skink">firmware</a><br><a href="https://github.com/Gnawman/kicad/tree/main/projects/skink">pcb</a></td>
+        </tr>
+        <tr>
+            <td><a href="/hardware/shingleback">shingleback</a></td>
+            <td>desktop keyboard</td>
+            <td>board by me<br><br><a href="https://github.com/Gnawman/qmk_firmware/tree/gnawman/keyboards/shingleback">firmware</a><br><a href="https://github.com/Gnawman/kicad/tree/main/projects/shingleback">pcb</a></td>
+        </tr>
+        <tr>
+            <td><a href="/hardware/thornydevil">thorny devil</a></td>
+            <td>miniature game controller</td>
+            <td>handmade arduino sketch<br><br><a href="https://github.com/Gnawman/kicad/tree/main/projects/thorny_devil">pcb</a></td>
+        </tr>
+        </tr>
+            <td><a href="/hardware/ergodox">ergodox</a></td>
+            <td>gaming macropad</td>
+            <td><a href="https://ergodox-ez.com/">website</a></td>
+        </tr>
+    </table>
     <br>
-    <h3>in-progress and previous projects:</h3>
+    <p>Keymaps for all keyboards can be found in my <a href='https://github.com/Gnawman/qmk_firmware'>QMK fork</a>. All my PCBs can be found on my <a href='https://github.com/Gnawman/kicad'>GitHub</a>. PCBs were designed using <a href="https://www.kicad.org/">Kicad</a>, which is free and open-source.</p>
+    <br>
+    <h3>other projects:</h3>
     <table>
         <tr>
             <th>name</th>
@@ -24,7 +50,7 @@
         <tr>
             <td><a href="/hardware/bevel.shtml">bevel</a></td>
             <td>retired</td>
-            <td>30% keyboard by me <a href="https://github.com/Gnawman/qmk_firmware/tree/gnawman/keyboards/bevel">(github)</a></td>
+            <td>30% keyboard by me <br><br><a href="https://github.com/Gnawman/qmk_firmware/tree/gnawman/keyboards/bevel">firmware</a><br><a href="https://github.com/Gnawman/kicad/tree/main/projects/bevel">pcb</a></td>
         </tr>
         <tr>
             <td><a href="/hardware/macropad.shtml">macropad</a></td>
@@ -43,5 +69,4 @@
         </tr>
     </table>
 </body>
-
 </html>

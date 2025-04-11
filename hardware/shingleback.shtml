@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/hardware.css">
+    <!--#include file="/favicon.html"-->
+    <title>shingleback</title>
+</head>
+<body>
+    <!--#include file="/menu.html"-->
+    <h1>shingleback</h1>
+    <img src="/images/temp/fullres.jpg" alt="placeholder image">
+    <p>My daily driver for home life. Perfect number of keys, plus a rotary encoder to control volume and play-pause. Originally the buttons were mapped to screenshot and open programs, but I've found it's more useful to have them as F13, F14, and F15 so I can use them for custom functions in software which allows for control mapping.</p>
+</body>
+
+</html>
