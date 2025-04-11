@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/projects.css">
+    <!--#include file="/favicon.html"-->
+    <title>aurebesh</title>
+</head>
+<body onload="setup()">
+    <!--#include file="/menu.html"-->
+    <h1>aurebesh</h1>
+    <script src="/js/aurebesh.js"></script>
+
+
+</body>
+
+</html>
+
