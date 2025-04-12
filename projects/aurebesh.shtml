@@ -7,7 +7,7 @@
     <!--#include file="/favicon.html"-->
     <title>aurebesh</title>
     <style>
-        @font-face { font-family: aurebesh; src: url('aurebesh.otf'); }
+        @font-face { font-family: aurebesh; src: url('Aurebesh.otf'); }
     </style>
 </head>
 <body onload="getWord()">
