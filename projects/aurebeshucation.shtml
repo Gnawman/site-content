@@ -7,27 +7,28 @@
     <!--#include file="/favicon.html"-->
     <title>aurebesh</title>
     <style>
-        @font-face { font-family: aurebesh; src: url('Aurebesh.otf'); }
+        @font-face { font-family: "aurebesh"; src: url('Aurebesh.otf'); }
     </style>
 </head>
 <body onload="getWord()">
     <!--#include file="/menu.html"-->
     <h1>aurebesh</h1>
-    <p id="worddisplay"></p>
+    <h2 id="worddisplay" style = "letter-spacing: 1em;"></h2>
     <br>
-    <script src="/js/aurebesh.js"></script>
+    <script src="/js/aurebeshucation.js"></script>
     <div>
         <label for="">input</label>
-        <input type="text" value="" id="input">
+        <input type="text" value="" id="typedtext">
     </div>
+    <br>
+    <button onclick="renderWord()">another one</button>
+    <button id="checkText" onclick="checkText()">check text</button>
+    <br>
     <br>
     <div>
         <label for="spice">spice</label>
         <input type="number" value="50" id="spice">
     </div>
-    <br>
-    <button onclick="getWord()" style="font-family:aurebesh">another one</button>
-    <button id="checkText" onclick="checkText()" style="font-family:aurebesh">check text</button>
     <p hidden id="wordlist">the
 of
 to
