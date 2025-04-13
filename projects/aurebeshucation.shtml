@@ -10,7 +10,7 @@
         @font-face { font-family: "aurebesh"; src: url('Aurebesh.otf'); }
     </style>
 </head>
-<body onload="getWord()">
+<body onload="setup()">
     <!--#include file="/menu.html"-->
     <h1>aurebesh</h1>
     <h2 id="worddisplay" style = "letter-spacing: 1em;"></h2>

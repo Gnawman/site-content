@@ -1,3 +1,20 @@
+function setup() {
+    renderWord();
+    //sets up listeners for the text box -- hotkeys are important!
+    var typedText = document.getElementById("typedtext")
+    typedText.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          renderWord();
+        };
+    });
+    typedText.addEventListener("input", function(event) {
+        checkText();
+    });
+     
+}
+
+//reads a hidden list of words, splits on whitespace, and returns a random one
 function getWord() {
     let wordListArray = document.getElementById('wordlist').innerHTML.split(/[\r\n]+/);
     let chosenWord = wordListArray[Math.floor(Math.random()*wordListArray.length)];
@@ -5,13 +22,15 @@ function getWord() {
     return output;
 };
 
+//returns a string of 0s with a spice-weighted chance to flip some to 1s
+//this will be used to aurebeshify characters at the indexes of the 1s
 function makeScrampleArray(wordArray, spice) {
     let output = "";
     for (var i=0; i<wordArray.length; i++) {
         if (Math.random()*100 < spice) {
-            output+="Y";
+            output+="1";
         } else {
-            output+="N";
+            output+="0";
         };
     };
     return output;
@@ -20,13 +39,14 @@ function makeScrampleArray(wordArray, spice) {
 function renderWord() {
     let wordDisplay = document.getElementById("worddisplay");
     wordDisplay.innerHTML = '';
+    document.getElementById("typedtext").value = "";
     let wordArray = getWord();
     let spice = document.getElementById("spice").value;
     let scrampleArray = makeScrampleArray(wordArray,spice);
     for (var i=0; i<wordArray.length; i++) {
         let letter = document.createElement("span")
         letter.innerText = wordArray[i];
-        if (scrampleArray[i] == "Y") {
+        if (scrampleArray[i] == "1") {
             letter.classList.add("aurebesh")
             letter.classList.add("feature-colour")
         };
@@ -35,22 +55,32 @@ function renderWord() {
 };
 
 function checkText() {
-    var wordDisplay = document.getElementById("worddisplay").children;
-    var typedText = document.getElementById("typedtext").value;
-    for (var i=0; i<wordDisplay.length; i++) {
-        wordDisplay[i].classList.remove("feature-colour");
-        wordDisplay[i].classList.remove("aurebeshucation-correct");
-        wordDisplay[i].classList.remove("aurebeshucation-incorrect");
-
-        console.log(wordDisplay[i].innerText);
-        console.log(typedText[i]);
-        
-        if (wordDisplay[i].innerText == typedText[i]) {
+    let wordDisplay = document.getElementById("worddisplay").children;
+    let typedText = document.getElementById("typedtext").value;
+    let lowestLength = Math.min(wordDisplay.length, typedText.length);
+    for (var i=lowestLength; i<wordDisplay.length; i++) {
+        let letterDisplay = wordDisplay[i];
+        wipeStyle(letterDisplay);
+        if (letterDisplay.classList.contains("aurebesh")) {
+            letterDisplay.classList.add("feature-colour");
+        };
+    };
+    for (var i=0; i<lowestLength; i++) {
+        let letterDisplay = wordDisplay[i];
+        if (letterDisplay.innerText == typedText[i]) {
+            wipeStyle(letterDisplay);
             wordDisplay[i].classList.add("aurebeshucation-correct");
         } else {
+            wipeStyle(letterDisplay);
             wordDisplay[i].classList.add("aurebeshucation-incorrect");
         };
     };
+};
+
+function wipeStyle(element) {
+    element.classList.remove("feature-colour");
+    element.classList.remove("aurebeshucation-correct");
+    element.classList.remove("aurebeshucation-incorrect");
 };
 
 /*
