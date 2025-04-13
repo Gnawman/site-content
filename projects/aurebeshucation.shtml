@@ -18,17 +18,27 @@
     <script src="/js/aurebeshucation.js"></script>
     <div>
         <label for="">input</label>
+        <br>
         <input type="text" value="" id="typedtext">
     </div>
     <br>
-    <button onclick="renderWord()">another one</button>
-    <button id="checkText" onclick="checkText()">check text</button>
+    <p>press ENTER or click button for</p><button onclick="renderWord()">another one</button>
     <br>
     <br>
-    <div>
-        <label for="spice">spice</label>
-        <input type="number" value="50" id="spice">
+    <button onclick="accordion('options')" class="accordion-button">options</button>
+    <div id="options" class="accordion-hide">
+        <div class="grid" style="grid-template-columns: auto auto;">
+            <div>
+                <label for="spice">spice</label>
+                <input type="number" value="50" id="spice">
+            </div>
+            <div>
+                <label for="">replaced letters</label>
+                <input type="text" value="abcdefghijklmnopqrstuvwxyz" id="replacedletters">
+            </div>
+        </div>
     </div>
+
     <p hidden id="wordlist">the
 of
 to

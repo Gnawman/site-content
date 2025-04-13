@@ -27,6 +27,7 @@ function getWord() {
 //creats a series of <span>s, possibly aurebeshified
 function renderWord() {
     let wordDisplay = document.getElementById("worddisplay");
+    let replacedLetters = document.getElementById("replacedletters").value.split("");
     wordDisplay.innerHTML = '';
     document.getElementById("typedtext").value = "";
     //chooses a random word from a hidden element
@@ -37,7 +38,7 @@ function renderWord() {
         let letter = document.createElement("span")
         letter.innerText = wordArray[i];
         //makes the <span> aurebesh if the spice is spicy
-        if (Math.random()*100 < spice) {
+        if (Math.random()*100 < spice && replacedLetters.includes(letter.innerText)) {
             letter.classList.add("aurebesh")
             letter.classList.add("feature-colour")
         };
@@ -79,3 +80,13 @@ function wipeStyle(element) {
     element.classList.remove("aurebeshucation-correct");
     element.classList.remove("aurebeshucation-incorrect");
 };
+
+//boilerplate accordion code
+function accordion(elementId) {
+    var x = document.getElementById(elementId);
+    if (x.classList.contains("accordion-hide")) {
+        x.className = x.className.replace("accordion-hide", "accordion-show");
+    } else {
+        x.className = x.className.replace("accordion-show", "accordion-hide");
+    }
+}
