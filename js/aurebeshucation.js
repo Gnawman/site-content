@@ -1,4 +1,5 @@
 function setup() {
+    //first one's free
     renderWord();
     //sets up listeners for the text box -- hotkeys are important!
     var typedText = document.getElementById("typedtext")
@@ -8,6 +9,7 @@ function setup() {
           renderWord();
         };
     });
+    //runs checkText function whenever text in box changes
     typedText.addEventListener("input", function(event) {
         checkText();
     });
@@ -22,31 +24,20 @@ function getWord() {
     return output;
 };
 
-//returns a string of 0s with a spice-weighted chance to flip some to 1s
-//this will be used to aurebeshify characters at the indexes of the 1s
-function makeScrampleArray(wordArray, spice) {
-    let output = "";
-    for (var i=0; i<wordArray.length; i++) {
-        if (Math.random()*100 < spice) {
-            output+="1";
-        } else {
-            output+="0";
-        };
-    };
-    return output;
-};
-
+//creats a series of <span>s, some of which are aurebeshified using a spice-weighted array
 function renderWord() {
     let wordDisplay = document.getElementById("worddisplay");
     wordDisplay.innerHTML = '';
     document.getElementById("typedtext").value = "";
+    //chooses a random word from a hidden element
     let wordArray = getWord();
     let spice = document.getElementById("spice").value;
-    let scrampleArray = makeScrampleArray(wordArray,spice);
+    //iterates through each letter and creates a <span> for each
     for (var i=0; i<wordArray.length; i++) {
         let letter = document.createElement("span")
         letter.innerText = wordArray[i];
-        if (scrampleArray[i] == "1") {
+        //makes the <span> aurebesh if there's a 1 in the spiced array
+        if (Math.random()*100 < spice) {
             letter.classList.add("aurebesh")
             letter.classList.add("feature-colour")
         };
