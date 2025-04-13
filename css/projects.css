@@ -8,3 +8,19 @@ p {
     margin:auto;
     line-height:1.4;
 }
+
+.aurebesh {
+    font-family: "aurebesh";
+}
+
+.aurebeshucation-correct {
+    color: #70A288;
+}
+
+.aurebeshucation-incorrect {
+    color: #B48EAE;
+}
+
+.feature-colour {
+    color: var(--feature);
+}
