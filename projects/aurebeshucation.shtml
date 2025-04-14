@@ -31,13 +31,13 @@
                 <input type="number" value="100" id="spice">
             </div>
             <div>
-                <label for="">replaced letters</label>
-                <input type="text" value="abcdefghijklmnopqrstuvwxyz" id="replacedletters">
+                <label for="">forbidden letters</label>
+                <input type="text" value="" id="forbiddenletters">
             </div>
         </div>
         <p>Type in the box to test your aurebesh knowledge.</p>
         <p>Spice determines the rate at which english letters are replaced by their aurebesh equivalents -- 0 spice will result in english only, 100 will give pure aurebesh.</p>
-        <p>Any letters not present in the replaced letters box will never be replaced, regardless of spice.</p>
+        <p>Any letters present in the forbidden letters box will never be replaced, regardless of spice.</p>
     </div>
 
     <p hidden id="wordlist">the

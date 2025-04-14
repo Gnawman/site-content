@@ -27,7 +27,7 @@ function getWord() {
 //creats a series of <span>s, possibly aurebeshified
 function renderWord() {
     let wordDisplay = document.getElementById("worddisplay");
-    let replacedLetters = document.getElementById("replacedletters").value.split("");
+    let forbiddenLetters = document.getElementById("forbiddenletters").value.split("");
     wordDisplay.innerHTML = '';
     document.getElementById("typedtext").value = "";
     //chooses a random word from a hidden element
@@ -38,7 +38,7 @@ function renderWord() {
         let letter = document.createElement("span")
         letter.innerText = wordArray[i];
         //makes the <span> aurebesh if the spice is spicy
-        if (Math.random()*100 < spice && replacedLetters.includes(letter.innerText)) {
+        if (Math.random()*100 < spice && !forbiddenLetters.includes(letter.innerText)) {
             letter.classList.add("aurebesh")
             letter.classList.add("feature-colour")
         };
