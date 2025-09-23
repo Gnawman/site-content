@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/art.css">
+    <!--#include file="/favicon.html"-->
+    <title>extremis</title>
+</head>
+<body onload="lightboxsetup()">
+    <!--#include file="/menu.html"-->
+    <script src="/js/lightbox.js"></script>
+    <h1>extremis</h1>
+    <h4>gallery - click thumbnails for full-sized images</h4>
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/extremis/extremis_squad.jpg" alt="twenty fully painted imperial guard models. They have tan cloth, green wargear, and orange turbans">
+    <br>
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/extremis/extremis_whitemask.jpg" alt="imperial guard model with miniature card on helmet">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/extremis/extremis_captain.jpg" alt="imperial guard model with miniature card on helmet">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/extremis/extremis_flag.jpg" alt="imperial guard model with two miniature cards on helmet">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/extremis/extremis_vox.jpg" alt="imperial guard model with kitbashed vox-caster">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/extremis/extremis_sarge.jpg" alt="imperial guard sergeant with plasma pistol">
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/art.css">
+    <!--#include file="/favicon.html"-->
+    <title>shock troops</title>
+</head>
+<body onload="lightboxsetup()">
+    <!--#include file="/menu.html"-->
+    <script src="/js/lightbox.js"></script>
+    <h1>shock troops</h1>
+    <h4>gallery - click thumbnails for full-sized images</h4>
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/shocktroops/squad1_done.jpg" alt="ten fully painted imperial guard models">
+    <br>
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/shocktroops/shocktroops_hwt_squad.jpg" alt="eight heavy weapon team imperial guard models">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/shocktroops/squad1card1_done.jpg" alt="imperial guard model with miniature card on helmet">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/shocktroops/squad1card2_done.jpg" alt="imperial guard model with two miniature cards on helmet">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/shocktroops/squad1vox_done.jpg" alt="imperial guard model with kitbashed vox-caster">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/shocktroops/squad1sarge_done.jpg" alt="imperial guard sergeant with plasma pistol">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/shocktroops/squad1las_done.jpg" alt="imperial guard model with lasgun">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/shocktroops/squad1plas_done.jpg" alt="imperial guard model with plasma gun">
+</body>
+</html>

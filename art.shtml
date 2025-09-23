@@ -11,8 +11,14 @@
     <!--#include file="/menu.html"-->
     <h1>art</h1>
     <p>I paint miniatures. Most of them are 3d-printed Imperial Guard for Warhammer 40k, but there's a DnD paladin in there as well.</p>
+    <img src="/images/miniatures/guard/infantry/army.png" alt="152 painted miniature army figures in a variety of poses and colours">
     <h3>galleries</h3>
-    <a href="/art/miniatures/infantrysquad.shtml">infantry squad</a><br>
+    <a href="/art/miniatures/shocktroops.shtml">shock troops</a><br>
+    <a href="/art/miniatures/catalogia.shtml">catalogia</a><br>
+    <a href="/art/miniatures/extremis.shtml">extremis</a><br>
+    <a href="/art/miniatures/ratlings.shtml">ratlings</a><br>
+    <a href="/art/miniatures/redactio.shtml">redactio</a><br>
+    <a href="/art/miniatures/outriders.shtml">outriders</a><br>
     <a href="/art/miniatures/vehicles.shtml">vehicles</a><br>
     <a href="/art/miniatures/workspace.shtml">workspace</a><br>
     <a href="/art/miniatures/dnd.shtml">dnd minis</a>
