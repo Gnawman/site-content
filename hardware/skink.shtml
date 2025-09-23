@@ -10,12 +10,11 @@
 <body>
     <!--#include file="/menu.html"-->
     <h1>skink</h1>
-    <img src="/images/temp/fullres.jpg" alt="placeholder image">
+    <img src="/images/skink/skink_top.jpg" alt="split keyboard with 32 keys. the left half has a microcontroller and the two halves are connected with RJ45 jacks. the keycaps have no letters on them and are pink, orange, and white">
     <p>After using the skink regularly since Janurary 2024, I can safely say I have settled on this 32-key layout as my perfect travel keyboard. The two halves are connected with a rj45 connector, same as the <a href="/hardware/shingleback">shingleback</a>. It's compact enough to fit in any bag I own, and due to the flippable design of the PCB it's the cheapest keyboard I've made to date.</p>
     <br>
     <p>The R&D process for this layout went like this: I didn't want to have to use two microcontrollers for a split keyboard, since that's twice the price. I also didn't want to print two different halves for a single keyboard, since the minimum PCB run is five units. Many flippable split designs use solder jump pads to differentiate between the halves -- I did that once and it was a real pain to have to solder so many extra contacts.</p>
     <br>
     <p>With those design constraints in mind, I got to work. An rj45 connector has eight contacts, which allows for a maximum of sixteen addressable keys in four columns and four rows. I differentiated the halves by two different locations for the rj45 jack; current flows through the two halves completely differently even though the PCBs are identical. It's also compatible with full-height or low-profile cherry-style switches. It's been a while since I made this board, and looking back at it I'm quite proud of the design work -- all motivated by laziness and penny-pinching!</p>
     </body>
-
 </html>
