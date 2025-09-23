@@ -13,12 +13,44 @@
     <p>I paint miniatures. Most of them are 3d-printed Imperial Guard for Warhammer 40k, but there's a DnD paladin in there as well.</p>
     <img src="/images/miniatures/guard/infantry/army.png" alt="152 painted miniature army figures in a variety of poses and colours">
     <h3>galleries</h3>
-    <a href="/art/miniatures/shocktroops.shtml">shock troops</a><br>
-    <a href="/art/miniatures/catalogia.shtml">catalogia</a><br>
-    <a href="/art/miniatures/extremis.shtml">extremis</a><br>
-    <a href="/art/miniatures/ratlings.shtml">ratlings</a><br>
-    <a href="/art/miniatures/redactio.shtml">redactio</a><br>
-    <a href="/art/miniatures/outriders.shtml">outriders</a><br>
+    <table>
+        <tr>
+            <th><a href="/art/miniatures/literati.shtml">
+                <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/literati/squad1_done.jpg" alt="ten fully painted imperial guard models. light blue rounded shoulderpads, helmets, and flak armour. tan fatigues">
+                <br>
+                literati
+            </a><br></th>
+            <th><a href="/art/miniatures/catalogia.shtml">
+                <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/catalogia/catalogia_bigsquad.jpg" alt="ten fully painted imperial guard models. light blue rounded shoulderpads, helmets, and flak armour. tan fatigues">
+                <br>
+                catalogia
+            </a><br></th>
+            <th><a href="/art/miniatures/extremis.shtml">
+                <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/extremis/extremis_squad.jpg" alt="ten fully painted imperial guard models. light blue rounded shoulderpads, helmets, and flak armour. tan fatigues">
+                <br>
+                extremis
+            </a><br></th>
+        </tr>
+        <tr><th><br></th></tr>
+        <tr>
+            <th><a href="/art/miniatures/ratlings.shtml">
+                <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_plasma_right.jpg" alt="ten fully painted imperial guard models. light blue rounded shoulderpads, helmets, and flak armour. tan fatigues">
+                <br>
+                ratlings
+            </a></th>
+            <th><a href="/art/miniatures/redactio.shtml">
+                <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/redactio/redactio_twoknives.jpg" alt="ten fully painted imperial guard models. light blue rounded shoulderpads, helmets, and flak armour. tan fatigues">
+                <br>
+                redactio
+            </a></th>
+            <th><a href="/art/miniatures/outriders.shtml">
+                <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/outriders/bike_group.jpg" alt="ten fully painted imperial guard models. light blue rounded shoulderpads, helmets, and flak armour. tan fatigues">
+                <br>
+                outriders
+            </a></th>
+        </tr>
+    </table>
+    <br>
     <a href="/art/miniatures/vehicles.shtml">vehicles</a><br>
     <a href="/art/miniatures/workspace.shtml">workspace</a><br>
     <a href="/art/miniatures/dnd.shtml">dnd minis</a>
