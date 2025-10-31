@@ -12,9 +12,9 @@
         <script src="/js/lightbox.js"></script>
     <h1>thorny devil</h1>
     <h4>gallery - click thumbnails for full-sized images</h4>
-    <img class="lightbox-thumb" src="/images/thumbs/thornydevil/thornydevil_front.jpg" alt="very small printed circuit board with twelve buttons and a microcontroller soldered directly on, viewed from the top">
-    <img class="lightbox-thumb" src="/images/thumbs/thornydevil/thornydevil_side.jpg" alt="very small printed circuit board with twelve buttons and a microcontroller soldered directly on, viewed from the side">
-    <img class="lightbox-thumb" src="/images/thumbs/thornydevil/thornydevil_back.jpg" alt="underside of a very small circuit board. Many through-hole components have been soldered on and the solder blobs have been clipped">
+    <img class="lightbox-thumb" src="/images/thumbs/hardware/thornydevil/thornydevil_front.jpg" alt="very small printed circuit board with twelve buttons and a microcontroller soldered directly on, viewed from the top">
+    <img class="lightbox-thumb" src="/images/thumbs/hardware/thornydevil/thornydevil_side.jpg" alt="very small printed circuit board with twelve buttons and a microcontroller soldered directly on, viewed from the side">
+    <img class="lightbox-thumb" src="/images/thumbs/hardware/thornydevil/thornydevil_back.jpg" alt="underside of a very small circuit board. Many through-hole components have been soldered on and the solder blobs have been clipped">
     <p>It's annoying to play games on my phone using the on-screen controls. Thumbs get in the way of seeing the screen! I had a bunch of buttons and a microcontroller left over from keyboards and I thought "I make my own keyboards, why not my own game controller"?</p>
     <p></p>
     <p>The thorny devil started life as a qmk keyboard, but quickly became apparent that for such a simple bit of kit, directly programming the microcontroller was the way to go. The four pins on each side hypothetically allow for joysticks to be added, but I haven't had the need or inclination to implement that yet.</p>

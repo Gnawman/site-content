@@ -12,29 +12,29 @@
     <script src="/js/lightbox.js"></script>
     <h1>bevel</h1>
     <h4>gallery - click thumbnails for full-sized images</h4>
-    <img class="lightbox-thumb" src="/images/thumbs/bevel/bevel_v2_wood_close.jpg" alt="split keyboard with 30 keys">
+    <img class="lightbox-thumb" src="/images/thumbs/hardware/bevel/bevel_v2_wood_close.jpg" alt="split keyboard with 30 keys">
     <br>
     <p>The first keyboard I designed from the ground up, and an important stepping stone towards my current daily drivers. Currently on the second revision, the first try had a few issues - nothing that couldn't be worked around, but just annoying enough that I wanted to fix them. I use a slightly-modified footprint for the pro-micro, so the circuit board is flippable for each half but the microcontroller is face-up on both halves.</p>
     <p>Designing the bevel was a lot of fun, since it meant an opportunity to learn pcb design, which was much less scary than expected.</p>
     <p>The </p>
     <br><br>
     <p class="gallery-description">pcb design of the rev1 in kicad. Looked for the rev2 but I've lost the pcb file somewhere</p>
-    <img class="lightbox-thumb" src="/images/thumbs/bevel/bevel_rev1_kicad.png" alt="double layered pcb design for a keyboard with 30 keys.">
+    <img class="lightbox-thumb" src="/images/thumbs/hardware/bevel/bevel_rev1_kicad.png" alt="double layered pcb design for a keyboard with 30 keys.">
     <br><br>
     <p class="gallery-description">circuit boards fresh from Shenzhen</p>
-    <img class="lightbox-thumb" src="/images/thumbs/bevel/bevel_rev1_pcb.jpg" alt="two black printed circuit boards. they match the pcb design from the previous image">
+    <img class="lightbox-thumb" src="/images/thumbs/hardware/bevel/bevel_rev1_pcb.jpg" alt="two black printed circuit boards. they match the pcb design from the previous image">
     <h3>rev1 glamour shots:</h3>
     <p class="gallery-description">turns out only a few pins on the pro micro support the data line for splitting the halves, so that had to be jumped to a different pin</p>
-    <img class="lightbox-thumb" src="/images/thumbs/bevel/bevel_rev1_gore.jpg" alt="a microcontroller viewed through a magnifying glass. two of the pins are connected with a copper wire">
+    <img class="lightbox-thumb" src="/images/thumbs/hardware/bevel/bevel_rev1_gore.jpg" alt="a microcontroller viewed through a magnifying glass. two of the pins are connected with a copper wire">
     <br><br>
     <p class="gallery-description">another pin needed to be jumped due to a problem in the wiring</p>
-    <img class="lightbox-thumb" src="/images/thumbs/bevel/bevel_rev1_gore1.jpg" alt="a black printed circuit board. a bare copper wire connects two through-holes">
+    <img class="lightbox-thumb" src="/images/thumbs/hardware/bevel/bevel_rev1_gore1.jpg" alt="a black printed circuit board. a bare copper wire connects two through-holes">
     <br><br>
     <p class="gallery-description">the trrs jack was too close to the pro micro, so I had to trim the plastic casing of the plug</p>
-    <img class="lightbox-thumb" src="/images/thumbs/bevel/bevel_rev1_gore2.jpg" alt="a close-up of a cable. the plug has been inexpertly filed down">
+    <img class="lightbox-thumb" src="/images/thumbs/hardware/bevel/bevel_rev1_gore2.jpg" alt="a close-up of a cable. the plug has been inexpertly filed down">
     <br><br>
     <p class="gallery-description">eventually everything was fixed and it didn't look too bad</p>
-    <img class="lightbox-thumb" src="/images/thumbs/bevel/bevel_rev1_workbench.jpg" alt="a messy workbench. pictured are a split keyboard, pliers, tin snips, a soldering iron, and various keyboard ingredients">
+    <img class="lightbox-thumb" src="/images/thumbs/hardware/bevel/bevel_rev1_workbench.jpg" alt="a messy workbench. pictured are a split keyboard, pliers, tin snips, a soldering iron, and various keyboard ingredients">
     <br><br>
     <p>All things considered I think it went well. You can find a copy of the keymap in my <a href="https://github.com/Gnawman/qmk_firmware/tree/gnawman/keyboards/bevel">QMK fork</a>.</p>
     <br><br>
