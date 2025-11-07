@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/projects.css">
+    <!--#include file="/favicon.html"-->
+    <title>trench crusalculator</title>
+</head>
+<body onload="setup()">
+    <!--#include file="/menu.html"-->
+    <h1>trench crusalculator</h1>
+    <script src="/js/trenchcrusalculator.js"></script>
+    <p>under construction</p>
+    <div>
+        <label for="diceAmount">dice to roll</label>
+        <input type="number" value="2" id="diceAmount">
+    </div>
+    <div>
+        <label for="highLow">+ or -</label>
+        <select id="highLow">
+            <option selected>Highest</option>
+            <option>Lowest</option>
+        </select>
+    </div>
+    <div>
+        <label for="diceKeep">dice to keep</label>
+        <input type="number" value="2" id="diceKeep">
+    </div>
+</body>
+</html>
