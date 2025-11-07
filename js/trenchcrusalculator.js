@@ -5,8 +5,6 @@ function crusalculate() {
     let diceNeg = +document.getElementById("highLow").selectedIndex;
     let diceSides = 6;
 
-    console.log(diceNeg);
-
     // derived variables
     let diceAmount = Math.abs(diceAmountInput);
 
@@ -40,7 +38,7 @@ function crusalculate() {
     console.log(sampleSpace);
     console.log("dice amount "+diceAmount+" | highest roll "+highestRoll+" | sample space "+sampleSpace);
     console.log(dictionary);
-    console.log("hit chance "+hitChance);
+    document.getElementById("hitChance").innerText = (hitChance*100).toFixed(2)+"%";
 };
 
 // this is where the magic happens
@@ -89,8 +87,6 @@ function rollDice(diceAmount,diceNeg,diceKeep,diceSides,diceArray,depth,rolls) {
     // when any loop in the recursive structure finishes, the die that has been decremented is set back to the max
     // this allows the loop to recurse on the next step and do the lower depth all over again
     diceArray[depth] = diceSides;
-
-    console.log(diceNeg);
     // returning the diceArray means it escapes scope and is consistent for the whole recursive process
     return [diceArray,rolls];
 };

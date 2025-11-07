@@ -14,20 +14,20 @@
     <p>under construction</p>
     <br>
     <div>
-        <label for="diceAmount">dice to roll</label>
-        <input type="number" value="2" id="diceAmount">
-    </div>
-    <div>
-        <label for="highLow">+ or -</label>
+        <p>attacking with<br>
+        <input type="number" value="2" id="diceAmount" class="input-short">
+        dice</p>
+        <p>and keeping the<br>
         <select id="highLow">
             <option selected>Highest</option>
             <option>Lowest</option>
         </select>
+        <input type="number" value="2" id="diceKeep" class="input-short"></p>
     </div>
-    <div>
-        <label for="diceKeep">dice to keep</label>
-        <input type="number" value="2" id="diceKeep">
-    </div>
+    <br>
     <button onclick="crusalculate()">crusalculate</button>
+    <br><br>
+    <p>hit chance: </p>
+    <p id="hitChance"></p>
 </body>
 </html>

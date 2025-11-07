@@ -175,3 +175,8 @@ td.highlight {
 	height:16px;
 	display:none;
 }
+
+/*inputs*/
+.input-short {
+	width:3em;
+}
