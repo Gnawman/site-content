@@ -11,23 +11,53 @@
     <!--#include file="/menu.html"-->
     <h1>trench crusalculator</h1>
     <script src="/js/trenchcrusalculator.js"></script>
-    <p>under construction</p>
+    <p>version 1</p>
     <br>
     <div>
         <p>attacking with<br>
-        <input type="number" value="2" id="diceAmount" class="input-short">
+        <input type="number" value="2" id="attackDiceAmount" class="input-short">
         dice</p>
         <p>and keeping the<br>
-        <select id="highLow">
+        <select id="attackHighLow">
             <option selected>Highest</option>
             <option>Lowest</option>
         </select>
-        <input type="number" value="2" id="diceKeep" class="input-short"></p>
+        <input type="number" value="2" id="attackDiceKeep" class="input-short">
+        </p>
+    </div>
+    <br>
+    <div>
+        <p>injuring with<br>
+        <input type="number" value="2" id="injureDiceAmount" class="input-short">
+        dice</p>
+        <p>and keeping the<br>
+        <select id="injureHighLow">
+            <option selected>Highest</option>
+            <option>Lowest</option>
+        </select>
+        <input type="number" value="2" id="injureDiceKeep" class="input-short">,<br>
+        plus
+        <input type="number" value="0" id="injureModifier" class="input-short">
+        </p>
     </div>
     <br>
     <button onclick="crusalculate()">crusalculate</button>
     <br><br>
-    <p>hit chance: </p>
     <p id="hitChance"></p>
+    <br>
+    <table>
+        <tr>
+            <td>no injury:</td>
+            <td>minor hit:</td>
+            <td>down:</td>
+            <td>out:</td>
+        </tr>
+        <tr>
+            <td id="nothingChance"></td>
+            <td id="minorHitChance"></td>
+            <td id="downChance"></td>
+            <td id="outChance"></td>
+        </tr>
+    </table>
 </body>
 </html>

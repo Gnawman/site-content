@@ -1,48 +1,86 @@
 function crusalculate() {
     // inputs from the web page
-    let diceAmountInput = +document.getElementById("diceAmount").value;
-    let diceKeep = +document.getElementById("diceKeep").value;
-    let diceNeg = +document.getElementById("highLow").selectedIndex;
+    let attackDiceAmountInput = +document.getElementById("attackDiceAmount").value;
+    let attackDiceKeep = +document.getElementById("attackDiceKeep").value;
+    let attackDiceNeg = +document.getElementById("attackHighLow").selectedIndex;
+    let injureDiceAmountInput = +document.getElementById("injureDiceAmount").value;
+    let injureDiceKeep = +document.getElementById("injureDiceKeep").value;
+    let injureDiceNeg = +document.getElementById("injureHighLow").selectedIndex;
+    let injureModifier = +document.getElementById("injureModifier").value;
+
     let diceSides = 6;
 
     // derived variables
-    let diceAmount = Math.abs(diceAmountInput);
-
-    let highestRoll = diceSides * diceKeep;
+    let attackDiceAmount = Math.abs(attackDiceAmountInput);
+    let attackHighestRoll = diceSides * attackDiceKeep;
+    let injureDiceAmount = Math.abs(injureDiceAmountInput);
+    let injureHighestRoll = (diceSides * injureDiceKeep)+injureModifier;
 
     // setup variables
     let depth = 0;
-    let rolls = [];
-    let dictionary = {};
+    let attackRolls = [];
+    let injureRolls = [];
+    let hitChanceDict = {};
+    let injureChanceDict = {};
     let hitChance = 0;
+    let nothingChance = 0;
+    let minorHitChance = 0;
+    let downChance = 0;
+    let outChance = 0;
 
     // construct the array that will be iterated over in rollDice
-    let diceArray = [];
-    for (let i = 0; i < diceAmount; i++) {
-        diceArray.push(diceSides);
+    let attackDiceArray = [];
+    for (let i = 0; i < attackDiceAmount; i++) {
+        attackDiceArray.push(diceSides);
+    };
+
+    let injureDiceArray = [];
+    for (let i = 0; i < injureDiceAmount; i++) {
+        injureDiceArray.push(diceSides);
     };
 
     // this generates a list of all possible rolls from the amount of dice, keeping the highest or lowest amount specified
-    let sampleSpace = rollDice(diceAmount,diceNeg,diceKeep,diceSides,diceArray,depth,rolls)[1];
-    let sampleSpaceLength = sampleSpace.length;
+    let attackSampleSpace = rollDice(attackDiceAmount,attackDiceNeg,attackDiceKeep,diceSides,attackDiceArray,0,depth,attackRolls)[1];
+    let attackSampleSpaceLength = attackSampleSpace.length;
 
-    // lists every possible number, and the probability of rolling that number
-    for (let i = diceKeep; i < highestRoll+1; i++){
-        dictionary[i] = countOccurrences(sampleSpace,i)/sampleSpaceLength;
+    let injureSampleSpace = rollDice(injureDiceAmount,injureDiceNeg,injureDiceKeep,diceSides,injureDiceArray,injureModifier,depth,injureRolls)[1];
+    let injureSampleSpaceLength = injureSampleSpace.length;
+
+    // lists every possible number for attacks, and the probability of rolling that number
+    for (let i = attackDiceKeep; i < attackHighestRoll+1; i++){
+        hitChanceDict[i] = countOccurrences(attackSampleSpace,i)/attackSampleSpaceLength;
         if (i > 6) {
-            hitChance = hitChance + Number(dictionary[i]);
+            hitChance = hitChance + Number(hitChanceDict[i]);
+        };
+    };
+
+    // lists every possible number for injuries, and the probability of rolling that number
+    for (let i = injureDiceKeep+injureModifier; i < injureHighestRoll+1; i++){
+        injureChanceDict[i] = countOccurrences(injureSampleSpace,i)/injureSampleSpaceLength;
+        if (i < 2) {
+            nothingChance = nothingChance + Number(injureChanceDict[i]);
+        } else if (i > 1 && i < 7) {
+            minorHitChance = minorHitChance + Number(injureChanceDict[i]);
+        } else if (i > 6 && i < 9) {
+            downChance = downChance + Number(injureChanceDict[i]);
+        } else {
+            outChance = outChance + Number(injureChanceDict[i]);
         };
     };
 
     // TODO output for testing
-    console.log(sampleSpace);
-    console.log("dice amount "+diceAmount+" | highest roll "+highestRoll+" | sample space "+sampleSpace);
-    console.log(dictionary);
-    document.getElementById("hitChance").innerText = (hitChance*100).toFixed(2)+"%";
+    console.log(injureSampleSpace);
+    console.log("dice amount "+attackDiceAmount+" | highest roll "+attackHighestRoll+" | sample space "+attackSampleSpace);
+    document.getElementById("hitChance").innerText = "hit chance "+(hitChance*100).toFixed(2)+"%";
+    document.getElementById("nothingChance").innerText = (nothingChance*hitChance*100).toFixed(2)+"%";
+    document.getElementById("minorHitChance").innerText = (minorHitChance*hitChance*100).toFixed(2)+"%";
+    document.getElementById("downChance").innerText = (downChance*hitChance*100).toFixed(2)+"%";
+    document.getElementById("outChance").innerText = (outChance*hitChance*100).toFixed(2)+"%";
+    
 };
 
 // this is where the magic happens
-function rollDice(diceAmount,diceNeg,diceKeep,diceSides,diceArray,depth,rolls) {
+function rollDice(diceAmount,diceNeg,diceKeep,diceSides,diceArray,injureModifier,depth,rolls) {
     // first set up a loop that runs a number of times equal to the size of the dice
     for (let i = 0; i < diceSides; i++) {
         // as depth starts at zero, this will always be TRUE the first time around
@@ -50,7 +88,7 @@ function rollDice(diceAmount,diceNeg,diceKeep,diceSides,diceArray,depth,rolls) {
             // the function is then recursively called, with the depth going up by one
             // this means that when we get deep enough in loops that we reach the number of dice specified, we stop calling the function
             // also the functions can always tell where they are in the recursive loop structure because of scope
-            [diceArray,rolls] = rollDice(diceAmount,diceNeg,diceKeep,diceSides,diceArray,depth+1,rolls);
+            [diceArray,rolls] = rollDice(diceAmount,diceNeg,diceKeep,diceSides,diceArray,injureModifier,depth+1,rolls);
         };
 
         // could have put this in an if/else I guess oops TODO
@@ -69,11 +107,12 @@ function rollDice(diceAmount,diceNeg,diceKeep,diceSides,diceArray,depth,rolls) {
                 sliceEnd = diceAmount;
             };
 
-            workingDiceArray.sort((a, b) => (a - b));
             // sorts the working dice array and grabs the X highest or X lowest, then adds them together
+            workingDiceArray.sort((a, b) => (a - b));
             workingDiceArray.slice(sliceStart,sliceEnd).forEach(x => { sum += x; });
-            // and appends the result to the rolls variable
-            rolls.push(sum);
+            // applies modifier and appends the result to the rolls variable
+            // modifier set to zero when doing to-hit rolls
+            rolls.push(sum+injureModifier);
 
             // TODO output for testing
             console.log("dice array "+diceArray+" | working dice array "+workingDiceArray);
