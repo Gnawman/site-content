@@ -7,11 +7,12 @@
     <!--#include file="/favicon.html"-->
     <title>trench crusalculator</title>
 </head>
-<body onload="setup()">
+<body onload="crusalculate()">
     <!--#include file="/menu.html"-->
     <h1>trench crusalculator</h1>
     <script src="/js/trenchcrusalculator.js"></script>
     <p>under construction</p>
+    <br>
     <div>
         <label for="diceAmount">dice to roll</label>
         <input type="number" value="2" id="diceAmount">
@@ -27,5 +28,6 @@
         <label for="diceKeep">dice to keep</label>
         <input type="number" value="2" id="diceKeep">
     </div>
+    <button onclick="crusalculate()">crusalculate</button>
 </body>
 </html>

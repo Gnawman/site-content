@@ -1,9 +1,11 @@
-function setup() {
+function crusalculate() {
     // inputs from the web page
     let diceAmountInput = +document.getElementById("diceAmount").value;
     let diceKeep = +document.getElementById("diceKeep").value;
-    let diceNeg = +document.getElementById("highLow").value;
+    let diceNeg = +document.getElementById("highLow").selectedIndex;
     let diceSides = 6;
+
+    console.log(diceNeg);
 
     // derived variables
     let diceAmount = Math.abs(diceAmountInput);
@@ -88,6 +90,7 @@ function rollDice(diceAmount,diceNeg,diceKeep,diceSides,diceArray,depth,rolls) {
     // this allows the loop to recurse on the next step and do the lower depth all over again
     diceArray[depth] = diceSides;
 
+    console.log(diceNeg);
     // returning the diceArray means it escapes scope and is consistent for the whole recursive process
     return [diceArray,rolls];
 };
