@@ -69,10 +69,10 @@ function crusalculate() {
     };
 
     // TODO output for testing
-    console.log(injureSampleSpace);
-    console.log("dice amount "+attackDiceAmount+" | highest roll "+attackHighestRoll+" | sample space "+attackSampleSpace);
-    document.getElementById("hitChance").innerText = "hit chance "+(hitChance*100).toFixed(2)+"%";
-    document.getElementById("nothingChance").innerText = (nothingChance*hitChance*100).toFixed(2)+"%";
+    console.log(hitChanceDict);
+    console.log(injureChanceDict);
+    // document.getElementById("hitChance").innerText = "hit chance "+(hitChance*100).toFixed(2)+"%";
+    document.getElementById("nothingChance").innerText = ((100-hitChance*100)+(nothingChance*hitChance*100)).toFixed(2)+"%";
     document.getElementById("minorHitChance").innerText = (minorHitChance*hitChance*100).toFixed(2)+"%";
     document.getElementById("downChance").innerText = (downChance*hitChance*100).toFixed(2)+"%";
     document.getElementById("outChance").innerText = (outChance*hitChance*100).toFixed(2)+"%";

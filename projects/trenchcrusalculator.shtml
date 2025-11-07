@@ -42,12 +42,11 @@
     </div>
     <br>
     <button onclick="crusalculate()">crusalculate</button>
-    <br><br>
-    <p id="hitChance"></p>
+    <br>
     <br>
     <table>
         <tr>
-            <td>no injury:</td>
+            <td>no injury or miss:</td>
             <td>minor hit:</td>
             <td>down:</td>
             <td>out:</td>
