@@ -12,6 +12,18 @@ function crusalculate() {
     let bloodCheck3 = document.getElementById("bloodCheck3");
     let bloodCheck4 = document.getElementById("bloodCheck4");
 
+    if (attackDiceAmountInput > 6) {
+        attackDiceAmountInput = 6;
+        let attackDiceAmountBox = document.getElementById("attackDiceAmount");
+        attackDiceAmountBox.value = 6;
+    };
+
+    if (injureDiceAmountInput > 6) {
+        injureDiceAmountInput = 6;
+        let injureDiceAmountBox = document.getElementById("injureDiceAmount");
+        injureDiceAmountBox.value = 6;
+    };
+
     let diceSides = 6;
 
     // derived variables
