@@ -11,34 +11,36 @@
     <!--#include file="/menu.html"-->
     <h1>trench crusalculator</h1>
     <script src="/js/trenchcrusalculator.js"></script>
-    <p>version 1</p>
-    <br>
-    <div>
-        <p>attacking with<br>
-        <input type="number" value="2" id="attackDiceAmount" class="input-short">
-        dice</p>
-        <p>and keeping the<br>
-        <select id="attackHighLow">
-            <option selected>Highest</option>
-            <option>Lowest</option>
-        </select>
-        <input type="number" value="2" id="attackDiceKeep" class="input-short">
-        </p>
-    </div>
-    <br>
-    <div>
-        <p>injuring with<br>
-        <input type="number" value="2" id="injureDiceAmount" class="input-short">
-        dice</p>
-        <p>and keeping the<br>
-        <select id="injureHighLow">
-            <option selected>Highest</option>
-            <option>Lowest</option>
-        </select>
-        <input type="number" value="2" id="injureDiceKeep" class="input-short">,<br>
-        plus
-        <input type="number" value="0" id="injureModifier" class="input-short">
-        </p>
+    <div class="grid" style="grid-template-columns: auto auto;">
+        <div>
+            attacking with
+            <br>
+            <input type="number" value="2" id="attackDiceAmount" class="input-short" max="6"> dice
+            <br>
+            and keeping the
+            <br>
+            <select id="attackHighLow">
+                <option selected>Highest</option>
+                <option>Lowest</option>
+            </select>
+            <input type="number" value="2" id="attackDiceKeep" class="input-short">
+        </div>
+        <div>
+            injuring with
+            <br>
+            <input type="number" value="2" id="injureDiceAmount" class="input-short" max="6"> dice
+            <br>
+            and keeping the
+            <br>
+            <select id="injureHighLow">
+                <option selected>Highest</option>
+                <option>Lowest</option>
+            </select>
+            <input type="number" value="2" id="injureDiceKeep" class="input-short">,
+            <br>
+            plus
+            <input type="number" value="0" id="injureModifier" class="input-short">
+        </div>
     </div>
     <br>
     <button onclick="crusalculate()">crusalculate</button>
@@ -52,10 +54,55 @@
             <td>out:</td>
         </tr>
         <tr>
-            <td id="nothingChance"></td>
-            <td id="minorHitChance"></td>
-            <td id="downChance"></td>
-            <td id="outChance"></td>
+            <td id="nothingChance0"></td>
+            <td id="minorHitChance0"></td>
+            <td id="downChance0"></td>
+            <td id="outChance0"></td>
+        </tr>
+    </table>
+    <br>
+    <p>Include:<br>
+    1 blood marker <input type="checkbox" id="bloodCheck1"><br>
+    2 blood marker <input type="checkbox" id="bloodCheck2"><br>
+    3 blood marker <input type="checkbox" id="bloodCheck3"><br>
+    bloodbath <input type="checkbox" id="bloodCheck4"><br>
+    </p>
+    <br>
+    <table id="tableBlood">
+        <tr>
+            <td style="border:none;"></td>
+            <td>no injury or miss:</td>
+            <td>minor hit:</td>
+            <td>down:</td>
+            <td>out:</td>
+        </tr>
+        <tr id="tableRowBlood1">
+            <td>1 token</td>
+            <td id="nothingChance1"></td>
+            <td id="minorHitChance1"></td>
+            <td id="downChance1"></td>
+            <td id="outChance1"></td>
+        </tr>
+        <tr id="tableRowBlood2">
+            <td>2 tokens</td>
+            <td id="nothingChance2"></td>
+            <td id="minorHitChance2"></td>
+            <td id="downChance2"></td>
+            <td id="outChance2"></td>
+        </tr>
+        <tr id="tableRowBlood3">
+            <td>3 tokens</td>
+            <td id="nothingChance3"></td>
+            <td id="minorHitChance3"></td>
+            <td id="downChance3"></td>
+            <td id="outChance3"></td>
+        </tr>
+        <tr id="tableRowBlood4">
+            <td>bloodbath</td>
+            <td id="nothingChance4"></td>
+            <td id="minorHitChance4"></td>
+            <td id="downChance4"></td>
+            <td id="outChance4"></td>
         </tr>
     </table>
 </body>
