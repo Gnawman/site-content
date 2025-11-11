@@ -1,4 +1,4 @@
-function crusalculate() {
+async function crusalculate() {
     // inputs from the web page
     let attackDiceAmountInput = +document.getElementById("attackDiceAmount").value;
     let attackDiceKeep = +document.getElementById("attackDiceKeep").value;
@@ -42,6 +42,8 @@ function crusalculate() {
     for (let i = 0; i < attackDiceAmount; i++) {
         attackDiceArray.push(diceSides);
     };
+
+    await scheduler.yield();
 
     // this generates a list of all possible attack rolls from the amount of dice, keeping the highest or lowest amount specified
     let attackSampleSpace = rollDice(attackDiceAmount,attackDiceNeg,attackDiceKeep,diceSides,attackDiceArray,0,depth,attackRolls)[1];
@@ -87,7 +89,6 @@ function crusalculate() {
     if (bloodCheck4.checked) {
         injure(4,injureDiceAmount,injureDiceNeg,injureDiceKeep,diceSides,injureModifier,depth,hitChance);
     };
-
 };
 
 // takes the user-selected parameters and outputs a sample space of all possible rolls
@@ -209,4 +210,16 @@ function injure(bloodChoice,injureDiceAmount,injureDiceNeg,injureDiceKeep,diceSi
     document.getElementById("minorHitChance"+bloodChoice).innerText = (minorHitChance*hitChance*100).toFixed(2)+"%";
     document.getElementById("downChance"+bloodChoice).innerText = (downChance*hitChance*100).toFixed(2)+"%";
     document.getElementById("outChance"+bloodChoice).innerText = (outChance*hitChance*100).toFixed(2)+"%";
+
+    document.getElementById("loading-background").style.display = "none";
+};
+
+function showLoading() {
+    let injureDiceAmountInput = +document.getElementById("injureDiceAmount").value
+    let bloodCheck2 = document.getElementById("bloodCheck2");
+    let bloodCheck3 = document.getElementById("bloodCheck3");
+
+    if (injureDiceAmountInput > 5 && (bloodCheck2.checked || bloodCheck3.checked)) {
+        document.getElementById("loading-background").style.display = "block"
+    };
 };

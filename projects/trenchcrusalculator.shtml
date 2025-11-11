@@ -11,6 +11,7 @@
     <!--#include file="/menu.html"-->
     <h1>trench crusalculator</h1>
     <script src="/js/trenchcrusalculator.js"></script>
+    <div id="loading-background" class="lightbox-background"><h1 style="display:flex; justify-content:center; align-items:center; text-align:center; min-height: 100vh;">LOADING</h1></div>
     <div class="grid" style="grid-template-columns: auto auto;">
         <div>
             attacking with
@@ -43,7 +44,7 @@
         </div>
     </div>
     <br>
-    <button onclick="crusalculate()">crusalculate</button>
+    <button onclick="crusalculate(); showLoading()">crusalculate</button>
     <br>
     <br>
     <table>
