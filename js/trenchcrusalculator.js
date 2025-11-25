@@ -184,11 +184,25 @@ function tableRowDisplay(rowCheck) {
 function injure(bloodChoice,injureDiceAmount,injureDiceNeg,injureDiceKeep,diceSides,injureModifier,depth,hitChance) {
     let injureDiceAmountMod = bloodChoice;
     let injureDiceKeepMod = 0;
-
     // checks if bloodbath is selected
     if (bloodChoice == 4 ) {
         injureDiceAmountMod = 1;
-        injureDiceKeepMod = 1;
+        injureDiceKeepMod += 1;
+    };
+
+    // need to make dice mod work when taking the lowest dice as well!
+    if (injureDiceNeg == 1) {
+        console.log("START INJUREDICENEG LOOP");
+        injureDiceAmount -= 2;
+        console.log("injureDiceAmount is "+injureDiceAmount);
+        injureDiceAmount = -Math.abs(injureDiceAmount) + injureDiceAmountMod;
+        console.log("injureDiceAmount is "+injureDiceAmount);
+        if (injureDiceAmount >= 0) {
+            injureDiceNeg = 0;
+        };
+        injureDiceAmount = Math.abs(injureDiceAmount) + 2;
+        console.log("injureDiceAmount is "+injureDiceAmount);
+        injureDiceAmountMod = 0;
     };
 
     let injureHighestRoll = (diceSides * (injureDiceKeep+injureDiceKeepMod)) + injureModifier;
