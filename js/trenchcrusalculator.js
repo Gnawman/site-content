@@ -183,31 +183,30 @@ function tableRowDisplay(rowCheck) {
 // bloodChoice is 0:vanilla, 1-3:number of blood tokens spent, 4:bloodbath
 function injure(bloodChoice,injureDiceAmount,injureDiceNeg,injureDiceKeep,diceSides,injureModifier,depth,hitChance) {
     let injureDiceAmountMod = bloodChoice;
-    let injureDiceKeepMod = 0;
     // checks if bloodbath is selected
     if (bloodChoice == 4 ) {
         injureDiceAmountMod = 0;
         injureDiceAmount += 1;
-        injureDiceKeepMod += 1;
+        injureDiceKeep += 1;
     };
 
     // need to make dice mod work when taking the lowest dice as well!
     if (injureDiceNeg == 1) {
         console.log("START INJUREDICENEG LOOP");
-        injureDiceAmount -= 2;
+        injureDiceAmount -= injureDiceKeep;
         console.log("injureDiceAmount is "+injureDiceAmount);
         injureDiceAmount = -Math.abs(injureDiceAmount) + injureDiceAmountMod;
         console.log("injureDiceAmount is "+injureDiceAmount);
         if (injureDiceAmount >= 0) {
             injureDiceNeg = 0;
         };
-        injureDiceAmount = Math.abs(injureDiceAmount) + 2;
+        injureDiceAmount = Math.abs(injureDiceAmount) + injureDiceKeep;
         console.log("injureDiceAmount is "+injureDiceAmount);
         injureDiceAmountMod = 0;
     };
 
-    let injureHighestRoll = (diceSides * (injureDiceKeep+injureDiceKeepMod)) + injureModifier;
-    let injureLowestRoll = injureDiceKeep+injureDiceKeepMod + injureModifier;
+    let injureHighestRoll = (diceSides * (injureDiceKeep)) + injureModifier;
+    let injureLowestRoll = injureDiceKeep + injureModifier;
 
     let injureDiceArray = [];
     for (let i = 0; i < injureDiceAmount+injureDiceAmountMod; i++) {
@@ -217,7 +216,7 @@ function injure(bloodChoice,injureDiceAmount,injureDiceNeg,injureDiceKeep,diceSi
     // setting up variables to pass to 
     let injureRolls = [];
 
-    let injureSampleSpace = rollDice(injureDiceAmount+injureDiceAmountMod,injureDiceNeg,injureDiceKeep+injureDiceKeepMod,diceSides,injureDiceArray,injureModifier,depth,injureRolls)[1];
+    let injureSampleSpace = rollDice(injureDiceAmount+injureDiceAmountMod,injureDiceNeg,injureDiceKeep,diceSides,injureDiceArray,injureModifier,depth,injureRolls)[1];
 
     [nothingChance,minorHitChance,downChance,outChance] = injuryProbability(injureLowestRoll,injureHighestRoll,injureSampleSpace);
 
