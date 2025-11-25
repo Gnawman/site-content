@@ -186,7 +186,8 @@ function injure(bloodChoice,injureDiceAmount,injureDiceNeg,injureDiceKeep,diceSi
     let injureDiceKeepMod = 0;
     // checks if bloodbath is selected
     if (bloodChoice == 4 ) {
-        injureDiceAmountMod = 1;
+        injureDiceAmountMod = 0;
+        injureDiceAmount += 1;
         injureDiceKeepMod += 1;
     };
 
