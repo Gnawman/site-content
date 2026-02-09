@@ -12,23 +12,19 @@
     <script src="/js/lightbox.js"></script>
     <h1>ratlings</h1>
     <h4>gallery - click thumbnails for full-sized images</h4>
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_sarge_front.jpg" alt="imperial guard model with miniature card on helmet">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_sarge_right.jpg" alt="imperial guard model with miniature card on helmet">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_sarge_front.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_sarge_right.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_plasma_right.jpg" alt="humanoid rat resting plasma gun on ground">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_plasma_back.jpg" alt="humanoid rat resting plasma gun on ground">
     <br>
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_plasma_right.jpg" alt="imperial guard model with two miniature cards on helmet">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_plasma_back.jpg" alt="imperial guard model with two miniature cards on helmet">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_flag_left.jpg" alt="humanoid rat holding a flag">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_flag_right.jpg" alt="humanoid rat holding a flag">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_medic_left.jpg" alt="humanoid rat holding a bag in each hand, and a knife in mouth">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_medic_right.jpg" alt="humanoid rat holding a bag in each hand, and a knife in mouth">
     <br>
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_flag_left.jpg" alt="imperial guard model with miniature card on helmet">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_flag_right.jpg" alt="imperial guard model with miniature card on helmet">
-    <br>
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_medic_left.jpg" alt="imperial guard model with two miniature cards on helmet">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_medic_right.jpg" alt="imperial guard model with two miniature cards on helmet">
-    <br>
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_vox_left.jpg" alt="imperial guard model with kitbashed vox-caster">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_vox_right.jpg" alt="imperial guard model with kitbashed vox-caster">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_vox_back.jpg" alt="imperial guard model with kitbashed vox-caster">
-    <br>
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_lascannon_front.jpg" alt="imperial guard sergeant with plasma pistol">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_lascannon_back.jpg" alt="imperial guard sergeant with plasma pistol">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_vox_left.jpg" alt="humanoid rat with kitbashed vox-caster">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_vox_back.jpg" alt="humanoid rat with kitbashed vox-caster">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_lascannon_front.jpg" alt="two humanoid rats arguing. a mounted lascannon sits behind them">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_lascannon_back.jpg" alt="two humanoid rats arguing. a mounted lascannon sits behind them">
 </body>
 </html>

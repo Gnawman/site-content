@@ -12,12 +12,12 @@
     <script src="/js/lightbox.js"></script>
     <h1>extremis</h1>
     <h4>gallery - click thumbnails for full-sized images</h4>
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/extremis/extremis_squad.jpg" alt="twenty fully painted imperial guard models. They have tan cloth, green wargear, and orange turbans">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/extremis/extremis_squad.jpg" alt="ten fully painted imperial guard models in coats and gas masks. They have dark red armour, tan fatigues, and silver metal highlights">
     <br>
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/extremis/extremis_whitemask.jpg" alt="imperial guard model with miniature card on helmet">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/extremis/extremis_captain.jpg" alt="imperial guard model with miniature card on helmet">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/extremis/extremis_flag.jpg" alt="imperial guard model with two miniature cards on helmet">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/extremis/extremis_vox.jpg" alt="imperial guard model with kitbashed vox-caster">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/extremis/extremis_sarge.jpg" alt="imperial guard sergeant with plasma pistol">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/extremis/extremis_whitemask.jpg" alt="two miniatures next to each other, comparing the aesthetic benefits of white vs brown gas masks">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/extremis/extremis_captain.jpg" alt="a gas-masked sergeant holding a sword and pistol">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/extremis/extremis_flag.jpg" alt="a gas-masked trooper with a flag and prosthetic leg made of a lasgun barrel">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/extremis/extremis_vox.jpg" alt="a gas-masked trooper with a vox-caster">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/extremis/extremis_sarge.jpg" alt="a gas-masked sergeant holding a sword and plasma pistol">
 </body>
 </html>
