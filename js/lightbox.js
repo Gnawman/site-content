@@ -8,7 +8,7 @@ function lightboxsetup() {
     var lightboxbackground = document.createElement("div")
     lightboxbackground.id = "lightbox-background"
     lightboxbackground.classList.add("lightbox-background")
-    lightboxbackground.innerHTML = "click to close"
+    lightboxbackground.textContent = "click to close"
     lightboxbackground.onclick = function() {hidelightbox()}
     // and the hidden lightbox display <img>
     var lightboximg = document.createElement("img")
