@@ -12,16 +12,16 @@
     <script src="/js/lightbox.js"></script>
     <h1>outriders</h1>
     <h4>gallery - click thumbnails for full-sized images</h4>
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/outriders/bike_group.jpg" alt="ten imperial guard miniatures. They are painted dark red and tan, and are riding motorbikes">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/outriders/bike_lasgun.jpg" alt="closeup of a motobike miniature in a larger group. The rider is holding a lasgun">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/outriders/bike_pillion.jpg" alt="closeup of a motobike miniature in a larger group. there are two riders">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/outriders/bike_pistol.jpg" alt="closeup of a motobike miniature in a larger group. The rider is holding a laspistol">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/outriders/bike_wheelie.jpg" alt="closeup of a motobike miniature in a larger group. The motobike is doing a wheelie">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/outriders/bike_group.jpg" alt="ten imperial guard miniatures. They are painted dark red and tan, and are riding motorbikes">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/outriders/bike_lasgun.jpg" alt="closeup of a motobike miniature in a larger group. The rider is holding a lasgun">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/outriders/bike_pillion.jpg" alt="closeup of a motobike miniature in a larger group. there are two riders">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/outriders/bike_pistol.jpg" alt="closeup of a motobike miniature in a larger group. The rider is holding a laspistol">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/outriders/bike_wheelie.jpg" alt="closeup of a motobike miniature in a larger group. The motobike is doing a wheelie">
     <br>
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/outriders/ratbike_fist.jpg" alt="zenithal-primed motorbike rider. The rider has a rat head and a power fist">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/outriders/ratbike_akira.jpg" alt="zenithal-primed motorbike rider. The rider has a rat head and is doing an akira slide">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/outriders/ratbike_lasgun.jpg" alt="zenithal-primed motorbike rider. The rider has a rat head and a lasgun">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/outriders/ratbike_standing.jpg" alt="zenithal-primed motorbike rider. The rider has a rat head, a spear, and one foot on the ground">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/outriders/ratbike_wheeliedown.jpg" alt="zenithal-primed motorbike rider. The rider has a rat head and a spear. The bike is doing a wheelie">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/outriders/ratbike_fist.jpg" alt="zenithal-primed motorbike rider. The rider has a rat head and a power fist">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/outriders/ratbike_akira.jpg" alt="zenithal-primed motorbike rider. The rider has a rat head and is doing an akira slide">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/outriders/ratbike_lasgun.jpg" alt="zenithal-primed motorbike rider. The rider has a rat head and a lasgun">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/outriders/ratbike_standing.jpg" alt="zenithal-primed motorbike rider. The rider has a rat head, a spear, and one foot on the ground">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/outriders/ratbike_wheeliedown.jpg" alt="zenithal-primed motorbike rider. The rider has a rat head and a spear. The bike is doing a wheelie">
 </body>
 </html>
