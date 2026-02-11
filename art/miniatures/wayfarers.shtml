@@ -12,40 +12,40 @@
     <script src="/js/lightbox.js"></script>
     <h1>wayfarers</h1>
     <h4>gallery - click thumbnails for full-sized images</h4>
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_group.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_group_1.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_group.jpg" alt="six miniatures with purple armour. They are in mechanical harnesses with legs painted red and brass">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_group_1.jpg" alt="six miniatures with purple armour. They are in mechanical harnesses with legs painted red and brass">
     <br>
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_axelasgun_front.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_axelasgun_side.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_axepistol_front.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_axepistol_side.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_axelasgun_front.jpg" alt="a wayfarer miniature with axe and lasgun">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_axelasgun_side.jpg" alt="a wayfarer miniature with axe and lasgun">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_axepistol_front.jpg" alt="a wayfarer miniature with axe and pistol">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_axepistol_side.jpg" alt="a wayfarer miniature with axe and pistol">
     <br>
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_flag_1_front.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_flag_1_back.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_flag_front.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_flag_back.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_flag_1_front.jpg" alt="a wayfarer miniature with a flag on their back. they hold a long sword">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_flag_1_back.jpg" alt="a wayfarer miniature with  a flag on their back. they hold a long sword">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_flag_front.jpg" alt="a wayfarer miniature with a flag on their back. they hold a short sword">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_flag_back.jpg" alt="a wayfarer miniature with a flag on their back. they hold a short sword">
     <br>
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_glaive_front.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_glaive_back.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_pistols_front.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_pistols_side.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_glaive_front.jpg" alt="a wayfarer miniature with glaive">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_glaive_back.jpg" alt="a wayfarer miniature with glaive">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_pistols_front.jpg" alt="a wayfarer miniature with two pistols, a cigar, and a round helmet">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_pistols_side.jpg" alt="a wayfarer miniature with two pistols, a cigar, and a round helmet">
     <br>
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_rifle_1_front.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_rifle_1_back.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_rifle_front.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_rifle_back.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_rifle_1_front.jpg" alt="a wayfarer miniature with long rifle">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_rifle_1_back.jpg" alt="a wayfarer miniature with long rifle">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_rifle_front.jpg" alt="a wayfarer miniature with long rifle">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_rifle_back.jpg" alt="a wayfarer miniature with long rifle">
     <br>
-     <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_staff_front.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_staff_back.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_sword_front.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_sword_side.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
+     <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_staff_front.jpg" alt="a wayfarer miniature with skull-topped staff">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_staff_back.jpg" alt="a wayfarer miniature with skull-topped staff">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_sword_front.jpg" alt="a wayfarer miniature with long sword">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_sword_side.jpg" alt="a wayfarer miniature with long sword">
     <br>
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_swords_front.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_swords_side.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_trident_front.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_trident_side.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_swords_front.jpg" alt="a wayfarer miniature with two swords">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_swords_side.jpg" alt="a wayfarer miniature with two swords">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_trident_front.jpg" alt="a wayfarer miniature with trident">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_trident_side.jpg" alt="a wayfarer miniature with trident">
     <br>
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_vox_front.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_vox_side.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_vox_front.jpg" alt="a wayfarer miniature with vox handset">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/wayfarers/wayfarer_vox_side.jpg" alt="a wayfarer miniature with vox handset">
 </body>
 </html>
