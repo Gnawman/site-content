@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/art.css">
+    <!--#include file="/favicon.html"-->
+    <title>scions</title>
+</head>
+<body onload="lightboxsetup()">
+    <!--#include file="/menu.html"-->
+    <script src="/js/lightbox.js"></script>
+    <h1>scions</h1>
+    <h4>gallery - click thumbnails for full-sized images</h4>
+
+    <div class="lightbox-thumb-container">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/other/scion_group.jpg" alt="fifteen miniatures with blue armour and tan fatigues. Five of them have red highlights">
+    </div>
+
+    <div class="lightbox-thumb-container">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/other/scion_lasgun.jpg" alt="a running scion miniature with lasgun">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/other/scion_grenade.jpg" alt="a sunning scion miniature preparing to throw a grenade">
+    </div>
+</body>
+</html>
