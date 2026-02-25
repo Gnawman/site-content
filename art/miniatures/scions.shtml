@@ -14,12 +14,27 @@
     <h4>gallery - click thumbnails for full-sized images</h4>
 
     <div class="lightbox-thumb-container">
-        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/other/scion_group.jpg" alt="fifteen miniatures with blue armour and tan fatigues. Five of them have red highlights">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/scions/scion_group_command.jpg" alt="five miniatures with blue armour, tan fatigues, and red accents">
+    </div>
+
+    <div class="lightbox-thumb-container lightbox-thumb-container-thick">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/scions/scion_command_plasma.jpg" alt="a crouching scion miniature with a plasma gun. the minature has red accents on blue armour">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/scions/scion_command_flag.jpg" alt="a scion miniature with a flag. the flag has a skull motif. the miniature has red accents on blue armour">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/scions/scion_commander.jpg" alt="a scion miniature with a plasma pistol and sword in a reverse grip. the miniature has red accents on blue armour">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/scions/scion_command_medic.jpg" alt="a running scion miniature with a lasgun and a hardcase. the hardcase has an asclepius symbol. the miniature has red accents on blue armour">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/scions/scion_command_melta.jpg" alt="a running scion miniature with a flamethrower. the miniature has red accents on blue armour.">
     </div>
 
     <div class="lightbox-thumb-container">
-        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/other/scion_lasgun.jpg" alt="a running scion miniature with lasgun">
-        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/other/scion_grenade.jpg" alt="a sunning scion miniature preparing to throw a grenade">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/scions/scion_group.jpg" alt="ten miniatures with blue armour and tan fatigues">
+    </div>
+
+    <div class="lightbox-thumb-container lightbox-thumb-container-thick">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/scions/scion_plasmas.jpg" alt="two scion miniatures with plasma guns. the left miniature is kneeling and the right is standing">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/scions/scion_voxes.jpg" alt="two scion miniatures with vox handsets. the left miniature is kneeling and the right is walking with a slight crouch">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/scions/scion_sarges.jpg" alt="two scion miniatures with plasma pistols and swords. both are standing. the left holds their sword aloft and pistol at rest, and the left the opposite">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/scions/scion_lasguns.jpg" alt="two scion miniatures with lasguns. the left miniature is standing at parade rest, the right is running and preparing to throw a grenade">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/scions/scion_meltas.jpg" alt="two scion miniatures with flamethrowers. both are walking in a slight crouch">
     </div>
 </body>
 </html>
