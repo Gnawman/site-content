@@ -143,15 +143,19 @@ td.highlight {
 	max-height:150px;
 	width:auto;
 	height:auto;
-	margin: 5px;
+	margin:5px;
 }
 
 .lightbox-thumb-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	max-width: 600px;
-	margin: auto;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	max-width:600px;
+	margin:auto;
+}
+
+.lightbox-thumb-container-thick {
+	max-width:650px;
 }
 
 .lightbox-background {
