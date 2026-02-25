@@ -12,11 +12,9 @@
     <script src="/js/lightbox.js"></script>
     <h1>scions</h1>
     <h4>gallery - click thumbnails for full-sized images</h4>
-
     <div class="lightbox-thumb-container">
         <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/scions/scion_group_command.jpg" alt="five miniatures with blue armour, tan fatigues, and red accents">
     </div>
-
     <div class="lightbox-thumb-container lightbox-thumb-container-thick">
         <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/scions/scion_command_plasma.jpg" alt="a crouching scion miniature with a plasma gun. the minature has red accents on blue armour">
         <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/scions/scion_command_flag.jpg" alt="a scion miniature with a flag. the flag has a skull motif. the miniature has red accents on blue armour">
@@ -24,11 +22,10 @@
         <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/scions/scion_command_medic.jpg" alt="a running scion miniature with a lasgun and a hardcase. the hardcase has an asclepius symbol. the miniature has red accents on blue armour">
         <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/scions/scion_command_melta.jpg" alt="a running scion miniature with a flamethrower. the miniature has red accents on blue armour.">
     </div>
-
+    <br>
     <div class="lightbox-thumb-container">
         <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/scions/scion_group.jpg" alt="ten miniatures with blue armour and tan fatigues">
     </div>
-
     <div class="lightbox-thumb-container lightbox-thumb-container-thick">
         <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/scions/scion_plasmas.jpg" alt="two scion miniatures with plasma guns. the left miniature is kneeling and the right is standing">
         <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/scions/scion_voxes.jpg" alt="two scion miniatures with vox handsets. the left miniature is kneeling and the right is walking with a slight crouch">

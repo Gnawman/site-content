@@ -35,11 +35,11 @@
                 extremis
             </a>
         </div>
-        <div>
-            <a href="/art/miniatures/ratlings.shtml">
-                <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_plasma_right.jpg" alt="humanoid rat resting plasma gun on ground">
+        <div>   
+            <a href="/art/miniatures/scions.shtml">
+                <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/scions/scion_group_command.jpg" alt="five miniatures with blue armour, tan fatigues, and red accents">
                 <br>
-                ratlings
+                scions
             </a>
         </div>
         <div>
@@ -50,6 +50,22 @@
             </a>
         </div>
         <div>
+            <a href="/art/miniatures/outriders.shtml">
+                <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/outriders/bike_group.jpg" alt="ten imperial guard miniatures. They are painted dark red and tan, and are riding motorbikes">
+                <br>
+                outriders
+            </a>    
+        </div>
+    </div>
+    <div class="grid" style="grid-template-columns: auto auto;">
+        <div>
+            <a href="/art/miniatures/ratlings.shtml">
+                <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_plasma_right.jpg" alt="humanoid rat resting plasma gun on ground">
+                <br>
+                ratlings
+            </a>
+        </div>
+        <div>
             <a href="/art/miniatures/redactio.shtml">
                 <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/redactio/redactio_twoknives.jpg" alt="muscly trooper with two knives">
                 <br>
@@ -57,10 +73,7 @@
             </a>
         </div>
     </div>
-    <a href="/art/miniatures/outriders.shtml">
-                <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/outriders/bike_group.jpg" alt="ten imperial guard miniatures. They are painted dark red and tan, and are riding motorbikes">
-                <br>
-                outriders
+
     </a>
     <br>
     <br>
