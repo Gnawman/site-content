@@ -12,22 +12,32 @@
     <script src="/js/lightbox.js"></script>
     <h1>ratlings</h1>
     <h4>gallery - click thumbnails for full-sized images</h4>
-
     <div class="lightbox-thumb-container">
-        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_sarge_front.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
-        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_sarge_right.jpg" alt="humanoid rat holding polearm with two hands and plasma pistol with tail">
-        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_plasma_right.jpg" alt="humanoid rat resting plasma gun on ground">
-        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_plasma_back.jpg" alt="humanoid rat resting plasma gun on ground">
-        
-        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_flag_left.jpg" alt="humanoid rat holding a flag">
-        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_flag_right.jpg" alt="humanoid rat holding a flag">
-        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_medic_left.jpg" alt="humanoid rat holding a bag in each hand, and a knife in mouth">
-        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_medic_right.jpg" alt="humanoid rat holding a bag in each hand, and a knife in mouth">
-        
-        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_vox_left.jpg" alt="humanoid rat with kitbashed vox-caster">
-        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_vox_back.jpg" alt="humanoid rat with kitbashed vox-caster">
-        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_lascannon_front.jpg" alt="two humanoid rats arguing. a mounted lascannon sits behind them">
-        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_lascannon_back.jpg" alt="two humanoid rats arguing. a mounted lascannon sits behind them">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/ratling_group_command.jpg" alt="five miniature anthropomorphic rats. they hold a variety of equipment. the following five images are closeups of these">
+    </div>
+    <div class="lightbox-thumb-container lightbox-thumb-container-thick">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/ratling_command_vox.jpg" alt="a ratling miniature with a vox on their back. they are holding a scroll and pointing at it">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/ratling_command_commander.jpg" alt="a ratling miniature holding a polearm with two hands and plasma pistol with their tail">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/ratling_command_flag.jpg" alt="a ratling miniature holding a flag. atop the flag is sitting a normal rat">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/ratling_command_plasma.jpg" alt="a ratling miniature resting a plasma gun on the ground">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/ratling_command_medic.jpg" alt="a ratling miniature holding two bags and running. it holds a blade in its mouth">
+    </div>
+    <br>
+        <div class="lightbox-thumb-container">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/ratling_group_1.jpg" alt="ten ratling miniatures with a variety of equipment">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/ratling_group.jpg" alt="ten more ratling miniatures with a variety of equipment">
+    </div>
+    <div class="lightbox-thumb-container lightbox-thumb-container-thick">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/ratling_sargevox_1.jpg" alt="two ratling miniatures. one has a melee weapon and a plasma pistol, the other has a vox">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/ratling_specialweapons_1.jpg" alt="two ratling miniatures. one has a flamer, the other has a plasma gun">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/ratling_lasguns_1.jpg" alt="two ratling miniatures. both have lasguns">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/ratling_lasguns1_1.jpg" alt="two ratling miniatures. both have lasguns">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/ratling_lasguns2_1.jpg" alt="two ratling miniatures. both have lasguns">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/ratling_sargevox.jpg" alt="two ratling miniatures. one has a melee weapon and a plasma pistol, the other has a vox">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/ratling_specialweapons.jpg" alt="two ratling miniatures. one has a grenade launcher, the other has a plasma gun">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/ratling_lasguns.jpg" alt="two ratling miniatures. both have lasguns">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/ratling_lasguns1.jpg" alt="two ratling miniatures. both have lasguns">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/ratling_lasguns2.jpg" alt="two ratling miniatures. both have lasguns">
     </div>
 </body>
 </html>

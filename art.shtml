@@ -10,9 +10,10 @@
 <body>
     <!--#include file="/menu.html"-->
     <h1>art</h1>
-    <p>I paint miniatures. Most of them are 3d-printed Imperial Guard for Warhammer 40k, but there's a DnD paladin in there as well.</p>
+    <p>I paint miniatures. Most of them are 3d-printed Imperial Guard for Warhammer 40k, but I've dabbled with DnD and Trench Crusade as well.</p>
+    <br>
     <img src="/images/miniatures/guard/infantry/army.png" alt="152 painted miniature army figures in a variety of poses and colours">
-    <h3>galleries</h3>
+    <h3>40k galleries</h3>
     <div class="lightbox-thumb-container lightbox-thumb-container-thick">
         <div>
             <a href="/art/miniatures/catalogia.shtml">
@@ -64,7 +65,7 @@
         </div>
         <div>
             <a href="/art/miniatures/ratlings.shtml">
-                <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/rat_plasma_right.jpg" alt="humanoid rat resting plasma gun on ground">
+                <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/ratling_group_command.jpg" alt="humanoid rat resting plasma gun on ground">
                 <br>
                 ratlings
             </a>
@@ -79,13 +80,27 @@
             <br><br>
         </div>
     </div>
-
-    </a>
     <br>
     <br>
+    <h3>other miniatures</h3>
+    <div>
+        <a href="/art/miniatures/hereticlegion.shtml">
+            <img class="lightbox-thumb" src="/images/thumbs/miniatures/trenchcrusade/hereticlegion.jpg" alt="PLACEHOLDER">
+            <br>
+            heretic legion
+        </a>
+        <br><br>
+    </div>
+    <div>
+        <a href="/art/miniatures/dnd.shtml">
+            <img class="lightbox-thumb" src="/images/thumbs/miniatures/dnd/orvo_front.jpg" alt="miniature of a man with a chain shirt, green cloak, and wavy sword">
+            <br>
+            dnd
+        </a>
+        <br><br>
+    </div>
     <a href="/art/miniatures/vehicles.shtml">vehicles</a><br>
     <a href="/art/miniatures/workspace.shtml">workspace</a><br>
-    <a href="/art/miniatures/dnd.shtml">dnd minis</a>
 </body>
 
 </html>

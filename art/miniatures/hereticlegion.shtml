@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/art.css">
+    <!--#include file="/favicon.html"-->
+    <title>heretic legion</title>
+</head>
+<body onload="lightboxsetup()">
+    <!--#include file="/menu.html"-->
+    <script src="/js/lightbox.js"></script>
+    <h1>heretic legion</h1>
+    <h4>gallery - click thumbnails for full-sized images</h4>
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/trenchcrusade/hereticlegion.jpg" alt="PLACEHOLDER">
+    <br><br>
+    <h4>bomb witch</h4>
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/trenchcrusade/bombwitch_front.jpg" alt="PLACEHOLDER">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/trenchcrusade/bombwitch_side.jpg" alt="PLACEHOLDER">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/trenchcrusade/bombwitch_back.jpg" alt="PLACEHOLDER">
+    <br><br>
+    <h4>war rat assault beast</h4>
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/trenchcrusade/ratogre_front.jpg" alt="PLACEHOLDER">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/trenchcrusade/ratogre_side.jpg" alt="PLACEHOLDER">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/trenchcrusade/ratogre_back.jpg" alt="PLACEHOLDER">
+</body>
+</html>
