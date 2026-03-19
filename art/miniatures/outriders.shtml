@@ -11,6 +11,7 @@
     <!--#include file="/menu.html"-->
     <script src="/js/lightbox.js"></script>
     <h1>outriders</h1>
+    <a href="/writing/wh40k/calor/#3-2-2-Extremis">lore entry: extremis</a>
     <h4>gallery - click thumbnails for full-sized images</h4>
     <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/outriders/bike_group.jpg" alt="ten imperial guard miniatures. They are painted dark red and tan, and are riding motorbikes">
     <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/outriders/bike_lasgun.jpg" alt="closeup of a motobike miniature in a larger group. The rider is holding a lasgun">
