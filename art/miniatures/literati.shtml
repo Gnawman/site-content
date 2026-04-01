@@ -13,14 +13,32 @@
     <h1>literati</h1>
     <a href="/writing/wh40k/calor/#3-1-4-the-literati">lore entry: literati</a>
     <h4>gallery - click thumbnails for full-sized images</h4>
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/literati/squad1_done.jpg" alt="ten fully painted imperial guard models">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/literati/shocktroops_hwt_squad.jpg" alt="eight heavy weapon team imperial guard models">
+    <div class="lightbox-thumb-container">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/literati/literati_group_command.jpg" alt="five miniatures with purple armour and tan fatigues. They carry a variety of equipment">
+    </div>
+    <div class="lightbox-thumb-container lightbox-thumb-container-thick">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/literati/literati_command_commander.jpg" alt="a miniature holding plasma pistol and sabre">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/literati/literati_command_plasma.jpg" alt="a miniature taking cover behind a barrel, aiming a plasma gun">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/literati/literati_command_vox.jpg" alt="a miniature with a vox on their back. they are holding a lasgun with two hands">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/literati/literati_command_flag.jpg" alt="a miniature holding a makeshift flag, kitbashed from a piece of spare plastic and a heavy weapon stand leg">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/literati/literati_command_medic.jpg" alt="two miniatures on the same base. one has a green cross on its helmet. The other is supine and missing 3/4 limbs">
+    </div>
     <br>
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/literati/squad1card1_done.jpg" alt="imperial guard model with miniature card on helmet">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/literati/squad1card2_done.jpg" alt="imperial guard model with two miniature cards on helmet">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/literati/squad1vox_done.jpg" alt="imperial guard model with kitbashed vox-caster">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/literati/squad1sarge_done.jpg" alt="imperial guard sergeant with plasma pistol">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/literati/squad1las_done.jpg" alt="imperial guard model with lasgun">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/literati/squad1plas_done.jpg" alt="imperial guard model with plasma gun">
+        <div class="lightbox-thumb-container">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/literati/literati_group.jpg" alt="ten miniatures with blue armour, tan fatigues, and a variety of equipment">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/literati/literati_group1.jpg" alt="ten more miniatures with blue armour, tan fatigues, and a variety of equipment">
+    </div>
+    <div class="lightbox-thumb-container lightbox-thumb-container-thick">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/literati/literati_sarges.jpg" alt="two miniatures. both have plasma pistols and sabres">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/literati/literati_plasmas.jpg" alt="two miniatures. both have plasma guns">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/literati/literati_flamers.jpg" alt="two miniatures. both have flamers">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/literati/literati_voxes.jpg" alt="two miniatures. both have vox sets on their backs, and are talking into chunky handsets">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/literati/literati_lasguns.jpg" alt="two miniatures. both have lasguns, one is pointing with a hand also holding a knife">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/literati/literati_lasguns1.jpg" alt="two miniatures. both have a lasgun slung over a shoulder">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/literati/literati_lasguns2.jpg" alt="two miniatures. both have lasguns, one is running with a knife">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/literati/literati_lasguns3.jpg" alt="two miniatures. both are holding lasguns with two hands">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/literati/literati_lasguns4.jpg" alt="two miniatures. both are holding lasguns with two hands">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/literati/literati_lasguns5.jpg" alt="two miniatures. both have lasguns, one is crouching with a knife">
+    </div>
 </body>
 </html>

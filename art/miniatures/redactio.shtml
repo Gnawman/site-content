@@ -13,9 +13,22 @@
     <h1>redactio</h1>
     <a href="/writing/wh40k/calor/#3-1-5-catalogia-redactio">lore entry: redactio</a>
     <h4>gallery - click thumbnails for full-sized images</h4>
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/redactio/redactio_sarge.jpg" alt="muscly trooper with pistol in a 'hold it' pose">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/redactio/redactio_twoknives.jpg" alt="muscly trooper with two knives">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/redactio/redactio_flamer.jpg" alt="muscly trooper with flamer">
-    <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/redactio/redactio_heavyflamer.jpg" alt="muscly trooper with heavy flamer">
+    <br>
+        <div class="lightbox-thumb-container">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/redactio/redactio_group.jpg" alt="ten miniatures with blue armour, tan fatigues, and a variety of equipment">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/redactio/redactio_group1.jpg" alt="ten more miniatures with blue armour, tan fatigues, and a variety of equipment">
+    </div>
+    <div class="lightbox-thumb-container lightbox-thumb-container-thick">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/redactio/redactio_sarges.jpg" alt="two miniatures. both have plasma pistols and sabres">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/redactio/redactio_lightflamers.jpg" alt="two miniatures. both have plasma guns">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/redactio/redactio_heavyflamers.jpg" alt="two miniatures. both have flamers">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/redactio/redactio_voxes.jpg" alt="two miniatures. both have vox sets on their backs, and are talking into chunky handsets">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/redactio/redactio_lasguns.jpg" alt="two miniatures. both have lasguns, one is pointing with a hand also holding a knife">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/redactio/redactio_lasguns1.jpg" alt="two miniatures. both have a lasgun slung over a shoulder">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/redactio/redactio_lasguns2.jpg" alt="two miniatures. both have lasguns, one is running with a knife">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/redactio/redactio_lasguns3.jpg" alt="two miniatures. both are holding lasguns with two hands">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/redactio/redactio_lasguns4.jpg" alt="two miniatures. both are holding lasguns with two hands">
+        <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/redactio/redactio_lasguns5.jpg" alt="two miniatures. both have lasguns, one is crouching with a knife">
+    </div>
 </body>
 </html>

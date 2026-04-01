@@ -25,7 +25,7 @@
         </div>
         <div>
             <a href="/art/miniatures/literati.shtml">
-                <img style="width:210px;height:186px" class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/literati/squad1_done.jpg" alt="ten fully painted imperial guard models. light blue rounded shoulderpads, helmets, and flak armour. tan fatigues">
+                <img style="width:210px;height:186px" class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/literati/literati_group.jpg" alt="ten fully painted imperial guard models. light blue rounded shoulderpads, helmets, and flak armour. tan fatigues">
                 <br>
                 literati
             </a>
@@ -41,9 +41,25 @@
         </div>
         <div>   
             <a href="/art/miniatures/scions.shtml">
-                <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/scions/scion_group_command.jpg" alt="five miniatures with blue armour, tan fatigues, and red accents">
+                <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/scions/scion_group.jpg" alt="ten miniatures with blue armour and tan fatigues">
                 <br>
                 scions
+            </a>
+            <br><br>
+        </div>
+        <div>
+            <a href="/art/miniatures/ratlings.shtml">
+                <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/ratling_group_1.jpg" alt="ten ratling miniatures with a variety of equipment">
+                <br>
+                ratlings
+            </a>
+            <br><br>
+        </div>
+        <div>
+            <a href="/art/miniatures/redactio.shtml">
+                <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/redactio/redactio_group.jpg" alt="ten fully painted miniatures. they have muscley arms and are wearing armoured vests">
+                <br>
+                redactio
             </a>
             <br><br>
         </div>
@@ -60,22 +76,6 @@
                 <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/outriders/bike_group.jpg" alt="ten imperial guard miniatures. They are painted dark red and tan, and are riding motorbikes">
                 <br>
                 outriders
-            </a>
-            <br><br>
-        </div>
-        <div>
-            <a href="/art/miniatures/ratlings.shtml">
-                <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/ratlings/ratling_group_command.jpg" alt="humanoid rat resting plasma gun on ground">
-                <br>
-                ratlings
-            </a>
-            <br><br>
-        </div>
-        <div>
-            <a href="/art/miniatures/redactio.shtml">
-                <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/redactio/redactio_twoknives.jpg" alt="muscly trooper with two knives">
-                <br>
-                redactio
             </a>
             <br><br>
         </div>
