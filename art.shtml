@@ -83,21 +83,23 @@
     <br>
     <br>
     <h3>other miniatures</h3>
-    <div>
-        <a href="/art/miniatures/hereticlegion.shtml">
-            <img class="lightbox-thumb" src="/images/thumbs/miniatures/trenchcrusade/hereticlegion.jpg" alt="PLACEHOLDER">
-            <br>
-            heretic legion
-        </a>
-        <br><br>
-    </div>
-    <div>
-        <a href="/art/miniatures/dnd.shtml">
-            <img class="lightbox-thumb" src="/images/thumbs/miniatures/dnd/orvo_front.jpg" alt="miniature of a man with a chain shirt, green cloak, and wavy sword">
-            <br>
-            dnd
-        </a>
-        <br><br>
+    <div class="lightbox-thumb-container lightbox-thumb-container-thick">
+        <div>
+            <a href="/art/miniatures/hereticlegion.shtml">
+                <img class="lightbox-thumb" src="/images/thumbs/miniatures/trenchcrusade/hereticlegion.jpg" alt="PLACEHOLDER">
+                <br>
+                heretic legion
+            </a>
+            <br><br>
+        </div>
+        <div>
+            <a href="/art/miniatures/dnd.shtml">
+                <img class="lightbox-thumb" src="/images/thumbs/miniatures/dnd/orvo_front.jpg" alt="miniature of a man with a chain shirt, green cloak, and wavy sword">
+                <br>
+                dnd
+            </a>
+            <br><br>
+        </div>
     </div>
     <a href="/art/miniatures/vehicles.shtml">vehicles</a><br>
     <a href="/art/miniatures/workspace.shtml">workspace</a><br>
