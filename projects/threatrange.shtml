@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/projects.css">
+    <!--#include file="/favicon.html"-->
+    <title>threat range</title>
+</head>
+<body onload="setup()">
+    <!--#include file="/menu.html"-->
+    <h1>threat range</h1>
+    <script src="/js/threatrange.js"></script>
+
+    <div class="grid" style="grid-template-columns: auto auto;">
+        <div style="text-align: right;">
+            <label for="move">movement </label>
+        </div>        
+        <div style="text-align: left;">
+            <input type="number" value="8" id="move" class="input-short">
+        </div>
+        <div style="text-align: right;">
+            <label for="advance">advance and charge </label>
+            <input type="checkbox" id="advance">
+        </div>
+        <div style="text-align: left;">
+            <label for="advanceReroll"> with rerolls </label>
+            <input type="checkbox" id="advanceReroll">
+        </div>
+        <div style="text-align: right;">
+            <label for="chargeModifier">charge modifier </label>
+            <input type="number" value="0" id="chargeModifier" class="input-short">
+        </div>
+        <div style="text-align: left;">
+            <label for="chargeReroll"> with rerolls </label><input type="checkbox" id="chargeReroll">
+        </div>
+    </div>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <td>minimum charge:</td>
+            <td>average charge:</td>
+            <td>maximum charge:</td>
+        </tr>
+        <tr>
+            <td id="minimumCharge"></td>
+            <td id="averageCharge"></td>
+            <td id="maximumCharge"></td>
+        </tr>
+    </table>
+</body>
+</html>
