@@ -10,14 +10,25 @@
 <body>
     <!--#include file="/menu.html"-->
     <h1>art</h1>
-    <p>I paint miniatures. Most of them are 3d-printed Imperial Guard for Warhammer 40k, but I've dabbled with DnD and Trench Crusade as well.</p>
+    <p>I paint miniatures. Most of them are Warhammer 40k (plastic and printed), but I've dabbled with DnD and Trench Crusade as well.</p>
     <br>
     <img src="/images/miniatures/guard/infantry/army.png" alt="152 painted miniature army figures in a variety of poses and colours">
-    <h3>40k galleries</h3>
+    <h2>world eaters</h2>
+    <div class="lightbox-thumb-container lightbox-thumb-container-thick">
+        <div>
+            <a href="/art/miniatures/spawn.shtml">
+                <img class="lightbox-thumb" src="/images/thumbs/miniatures/khorne/beasts/spawn_group.jpg" alt="two fully painted models. They are red and black daemons, one has an axe and the other a sword">
+                <br>
+                chaos spawn
+            </a>
+            <br><br>
+        </div>
+    </div>
+    <h2>imperial guard</h2>
     <div class="lightbox-thumb-container lightbox-thumb-container-thick">
         <div>
             <a href="/art/miniatures/catalogia.shtml">
-                <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/catalogia/catalogia_bigsquad.jpg" alt="ten fully painted imperial guard models. twenty fully painted imperial guard models. They have tan fatigues, green wargear, and bright orange turbans">
+                <img class="lightbox-thumb" src="/images/thumbs/miniatures/guard/infantry/catalogia/catalogia_bigsquad.jpg" alt="twenty fully painted imperial guard models. They have tan fatigues, green wargear, and bright orange turbans">
                 <br>
                 catalogia
             </a>
@@ -82,7 +93,7 @@
     </div>
     <br>
     <br>
-    <h3>other miniatures</h3>
+    <h2>other miniatures</h2>
     <div class="lightbox-thumb-container lightbox-thumb-container-thick">
         <div>
             <a href="/art/miniatures/hereticlegion.shtml">

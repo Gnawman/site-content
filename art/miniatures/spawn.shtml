@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/art.css">
+    <!--#include file="/favicon.html"-->
+    <title>chaos spawn</title>
+</head>
+<body onload="lightboxsetup()">
+    <!--#include file="/menu.html"-->
+    <script src="/js/lightbox.js"></script>
+    <h1>chaos spawn</h1>
+    <h4>gallery - click thumbnails for full-sized images</h4>
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/khorne/beasts/spawn_group.jpg" alt="two fully painted models. They are red and black daemons, one has an axe and the other a sword">
+    <br>
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/khorne/beasts/spawn_axe_front.jpg" alt="black and red daemon with a two-handed chainaxe">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/khorne/beasts/spawn_axe_back.jpg" alt="back view of the axe daemon, a corpse is broken into pieces on its backpack">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/khorne/beasts/spawn_axe_close.jpg" alt="closeup of the axe daemon's backpack. lots of blood on the body pieces">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/khorne/beasts/spawn_sword_front.jpg" alt="black and red daemon with a one-handed chainsword">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/khorne/beasts/spawn_sword_back.jpg" alt="back view of the sword daemon, it has a large rune glowing yellow and orange carved into its skin">
+    <img class="lightbox-thumb" src="/images/thumbs/miniatures/khorne/beasts/spawn_sword_close.jpg" alt="closeup of the sword daemon's shoulderpad. It has many fluttering oaths of moment with fine line fake writing">
+</body>
+</html>
