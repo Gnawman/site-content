@@ -16,31 +16,31 @@
         <div>
             attacking with
             <br>
-            <input type="number" value="2" id="attackDiceAmount" class="input-short" max="6"> dice
+            <input aria-label="attack dice amount" type="number" value="2" id="attackDiceAmount" class="input-short" max="6"> dice
             <br>
             and keeping the
             <br>
-            <select id="attackHighLow">
+            <select aria-label="highest or lowest attack" id="attackHighLow">
                 <option selected>Highest</option>
                 <option>Lowest</option>
             </select>
-            <input type="number" value="2" id="attackDiceKeep" class="input-short">
+            <input aria-label="number of attack dice to keep" type="number" value="2" id="attackDiceKeep" class="input-short">
         </div>
         <div>
             injuring with
             <br>
-            <input type="number" value="2" id="injureDiceAmount" class="input-short" max="6"> dice
+            <input aria-label="injury dice amount" type="number" value="2" id="injureDiceAmount" class="input-short" max="6"> dice
             <br>
             and keeping the
             <br>
-            <select id="injureHighLow">
+            <select aria-label="highest or lowest injury" id="injureHighLow">
                 <option selected>Highest</option>
                 <option>Lowest</option>
             </select>
-            <input type="number" value="2" id="injureDiceKeep" class="input-short">,
+            <input aria-label="number of injury dice to keep" type="number" value="2" id="injureDiceKeep" class="input-short">,
             <br>
             plus
-            <input type="number" value="0" id="injureModifier" class="input-short">
+            <input aria-label="injury modifier" type="number" value="0" id="injureModifier" class="input-short">
         </div>
     </div>
     <br>
@@ -63,10 +63,10 @@
     </table>
     <br>
     <p>Include:<br>
-    1 blood marker <input type="checkbox" id="bloodCheck1"><br>
-    2 blood marker <input type="checkbox" id="bloodCheck2"><br>
-    3 blood marker <input type="checkbox" id="bloodCheck3"><br>
-    bloodbath <input type="checkbox" id="bloodCheck4"><br>
+    <label for="bloodCheck1" >1 blood marker </label><input type="checkbox" id="bloodCheck1"><br>
+    <label for="bloodCheck2" >2 blood marker </label><input type="checkbox" id="bloodCheck2"><br>
+    <label for="bloodCheck3" >3 blood marker </label><input type="checkbox" id="bloodCheck3"><br>
+    <label for="bloodCheck4" >bloodbath </label><input type="checkbox" id="bloodCheck4"><br>
     </p>
     <br>
     <table id="tableBlood">
