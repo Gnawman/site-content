@@ -11,15 +11,18 @@
     <!--#include file="/menu.html"-->
     <h1>projects</h1>
     <h4>here are some projects i've gone and done</h4>
-    <a href="/projects/shotchart.shtml">sharpshooter shot chart</a>
-    <br><br>
-    <a href="/projects/trenchcrusalculator.shtml">trench crusalculator</a>
-    <br><br>
     <a href="/projects/aurebeshucation.shtml">aurebeshucation</a>
     <br><br>
     <a href="/projects/ds_bingo.shtml">ds bingo</a>
     <br><br>
     <a href="/projects/8ball.shtml">8ball</a>
+    <br><br>
+    <h4>tabletop calculators</h4>
+    <a href="/projects/shotchart.shtml">sharpshooter shot chart</a>
+    <br><br>
+    <a href="/projects/trenchcrusalculator.shtml">trench crusalculator</a>
+    <br><br>
+    <a href="/projects/threatrange.shtml">threat range</a>
     <br><br>
     <h4>name generators</h4>
     <a href="/projects/namegen.shtml">namegen</a>

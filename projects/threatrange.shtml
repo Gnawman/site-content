@@ -14,9 +14,9 @@
     <div class="grid" style="grid-template-columns: auto auto;">
         <div style="text-align: right;">
             <label for="move">movement </label>
+            <input type="number" value="8" id="move" class="input-short">
         </div>        
         <div style="text-align: left;">
-            <input type="number" value="1" id="move" class="input-short">
         </div>
         <div style="text-align: right;">
             <label for="advance">advance and charge </label>
@@ -30,35 +30,15 @@
         </div>
         <div style="text-align: right;">
             <label for="chargeModifier">charge modifier </label>
-            <input type="number" value="1" id="chargeModifier" class="input-short">
+            <input type="number" value="0" id="chargeModifier" class="input-short">
         </div>
         <div style="text-align: left;">
-            <!--
             <label for="chargeReroll"> with rerolls </label>
             <input type="checkbox" id="chargeReroll">
-            -->
         </div>
     </div>
     <br>
     <svg height='548' width='548' id='chart'></svg>
     <br>
-    <br>
-    <table>
-        <tr>
-            <td>minimum threat:</td>
-            <td>average threat:</td>
-            <td>maximum threat:</td>
-        </tr>
-        <tr>
-            <td id="minimumCharge"></td>
-            <td id="averageCharge"></td>
-            <td id="maximumCharge"></td>
-        </tr>
-    </table>
-
-    <p>TODO better tooltips</p>
-    <p>TODO rerolls (probably requires refactor)</p>
-
-    <div id="tooltipChance" class="tooltip">sample text</div>
 </body>
 </html>
