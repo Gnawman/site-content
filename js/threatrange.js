@@ -97,7 +97,7 @@ function drawChart(rolls,moveTotal,chargeReroll) {
         let height = successPercentage[i][1]*heightRatio;
         let x = 24+(columnWidth*i)+i;
         let y = 524-height;
-        console.log(successPercentage[i][1]);
+        
         let colour;
         if (successPercentage[i][1] >= 0.76) {
             colour = "#70A288"
