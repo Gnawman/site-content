@@ -4,6 +4,10 @@ function setup() {
     //setting up event listeners on every field so any change updates values
     document.getElementById("move").addEventListener("input", rangeCalc);
     document.getElementById("advance").addEventListener("change", rangeCalc);
+    //i've decided that since you don't have foreknowledge of your charge roll before you choose to advance, rerolls shouldn't be counted
+    //also that sounds hard
+    //maybe I should make an advancererollulator that tells you the expected value of rerolling your advance?
+    //that also sounds hard
 //  document.getElementById("advanceReroll").addEventListener("change", rangeCalc);
     document.getElementById("chargeModifier").addEventListener("input", rangeCalc);
     document.getElementById("chargeReroll").addEventListener("change", rangeCalc);
@@ -18,12 +22,15 @@ function rangeCalc() {
     let chargeModifier = +document.getElementById("chargeModifier").value;
     let chargeReroll = document.getElementById("chargeReroll").checked;
 
-    //no need to treat movement and charge modifier differently
-    let moveTotal = move + chargeModifier;
+    //there is in fact a need to treat movement and charge modifier differently
+    //leaving this as a monument to my hubris
+    // let moveTotal = move + chargeModifier;
 
+    //this is a big array of all possible combinations of rolls on 2d6 or 3d6, depending on if you're advancing or not
     let rolls = generateRolls(advance);
 
-    drawChart(rolls,moveTotal,chargeReroll);
+    //and this draws up the svgs
+    drawChart(rolls,move,chargeModifier,chargeReroll);
 };
 
 function generateRolls(advance) {
@@ -45,7 +52,7 @@ function generateRolls(advance) {
 };
 
 //all the svg stuff is handled in here
-function drawChart(rolls,moveTotal,chargeReroll) {
+function drawChart(rolls,move,chargeModifier,chargeReroll) {
     let chart = document.getElementById("chart");
 
     // gotta wipe the chart to draw the chart
@@ -70,15 +77,17 @@ function drawChart(rolls,moveTotal,chargeReroll) {
     text.setAttribute("text-anchor","middle")
     text.textContent = "threat range";
 
-    let lowestRoll = sumArray(rolls[0])+moveTotal
-    let highestRoll = sumArray(rolls[rolls.length-1])+moveTotal;
+    let lowestRoll = sumArray(rolls[0])+move+chargeModifier
+    let highestRoll = sumArray(rolls[rolls.length-1])+move+chargeModifier;
 
-    let successPercentage = generateSuccessPercentages(rolls,lowestRoll,highestRoll,rolls.length,moveTotal,chargeReroll);
+    //this is a big (but smaller than rolls) array with percentage chances for each target number to be rolled
+    let successPercentage = generateSuccessPercentages(rolls,lowestRoll,highestRoll,rolls.length,move,chargeModifier,chargeReroll);
 
     let highestPercentage = 0;
     let highestPercentageIndex = 0;
 
-    //the total number of results is needed for calculating percentages later
+    //gotta know the biggest box so we can scale everything else off it
+    //it has come to my attention that the first box will always be the biggest but oh well
     for (let i = 0; i < successPercentage.length; i++) {
         if (successPercentage[i][1] > highestPercentage) {
             highestPercentage = successPercentage[i][1];
@@ -95,9 +104,10 @@ function drawChart(rolls,moveTotal,chargeReroll) {
         //had to activate my neurons and think about ratios for this part, don't want to do it again
         //lmao I had to do it again
         let height = successPercentage[i][1]*heightRatio;
+
         let x = 24+(columnWidth*i)+i;
         let y = 524-height;
-        
+
         let colour;
         if (successPercentage[i][1] >= 0.76) {
             colour = "#70A288"
@@ -106,6 +116,7 @@ function drawChart(rolls,moveTotal,chargeReroll) {
         } else {
             colour = "#B48EAE"
         };
+
         //then call the drawing functions to actually make the svgs
         chart.appendChild(drawBox(columnWidth,height,x,y,colour));
         chart.appendChild(drawPercentageText(columnWidth,height,x,successPercentage[i][1]));
@@ -117,26 +128,36 @@ function drawChart(rolls,moveTotal,chargeReroll) {
     chart.appendChild(text);
 };
 
-function generateSuccessPercentages(rolls,lowestRoll,highestRoll,rollsLength,moveTotal,chargeReroll) {
+function generateSuccessPercentages(rolls,lowestRoll,highestRoll,rollsLength,move,chargeModifier,chargeReroll) {
     let successPercentage = []
+    //this loop counts through possible totals from lowest to highest -- these are treated as target numbers
     for (let i = lowestRoll; i <= highestRoll; i++) {
         let rollSuccessCount = 0;
+        //this loop counts through all possible rolls
         for (let j = 0; j < rollsLength; j++) {
+            let rollsSum = sumArray(rolls[j]);
             if (chargeReroll != true) {
-                if (sumArray(rolls[j])+moveTotal >= i) {
+                //checks the roll (plus mods) against the target number 
+                //goddammit dan pointing out that charges of 2" always fail
+                //had to account for rolling snake eyes -- if there's three dice because advance it just picks the first two which is probably acceptable??
+                if (rollsSum+move+chargeModifier >= i && rolls[j][0]+rolls[j][1]+chargeModifier > 2) {
                     rollSuccessCount++;
                 };
             } else {
                 // this is where I'll do the reroll shit
-                if (sumArray(rolls[j])+moveTotal >= i) {
+                //thank you dan
+                if (rollsSum+move+chargeModifier >= i && rolls[j][0]+rolls[j][1]+chargeModifier > 2) {
                     rollSuccessCount += 36;
                 } else {
+                    //this loop is slightly different (just sets up the variables and adds them instead of pushing them to a variable)
+                    //why? The rolls don't have to exist outside this loop and also I got bored
                     let rollScratch = sumArray(rolls[j].slice(0, -2));
                     for (let l = 1; l <= 6; l++) {
                         //for every possible result on the first die, a second die is rolled
                         for (let m = 1; m <= 6; m++) {
                             //then the rolls are added up lazily since we don't have to preserve the scratch array
-                            if (rollScratch+l+m+moveTotal >= i) {
+                            //thank you dan
+                            if (rollScratch+l+m+move+chargeModifier >= i && l+m+chargeModifier > 2) {
                                 rollSuccessCount++
                             };
                         };
@@ -144,12 +165,14 @@ function generateSuccessPercentages(rolls,lowestRoll,highestRoll,rollsLength,mov
                 };
             };
         };
+        //gotta do this bit because if we're rerolling the sample space is 36 times bigger
         let outcomesPerRoll = 0;
         if (chargeReroll == true) {
             outcomesPerRoll = 36;
         } else {
             outcomesPerRoll = 1;
         };
+        //this bit just sets up the output array by comparing number of successes to total sample space
         let percentage = rollSuccessCount/(rollsLength*outcomesPerRoll);
         successPercentage.push([i,percentage]);
     };
@@ -172,15 +195,19 @@ function drawBox(width,height,x,y,colour) {
 function drawPercentageText(width,height,x,percentageChance) {
     let percentageText = document.createElementNS(svgNS, "text");
     percentageText.setAttribute("x",x+(width/2));
+    //since we know how tall boxes will be based on percentages, it's easy to place text just above them
     percentageText.setAttribute("y",520-height);
+    //since realising 99.9% is the highest possible chance, I don't need to shrink the text since we can't get 100.0% anymore hehe
     percentageText.setAttribute("style","fill:var(--feature); font-size:10px");
     percentageText.setAttribute("text-anchor","middle")
+    //100.0% looked bad and I was thinking about cutting trailing zeroes but turns out that's impossible
+    //thank you dan but for real
     percentageText.textContent = parseFloat(percentageChance*100).toFixed(1)+"%";
 
     return percentageText;
 };
 
-//numbers at bottom of boxes which tell you what value each corresponds to
+//numbers at bottom of boxes that tell you what value each box corresponds to
 function drawLabelText(width,x,columnNumber) {
     let labelText = document.createElementNS(svgNS, "text");
     labelText.setAttribute("x",x+(width/2));
@@ -192,6 +219,7 @@ function drawLabelText(width,x,columnNumber) {
     return labelText;
 };
 
+//almost a pointless function, but I do it just enough (4 times) that it's probably worth splitting it out 
 function sumArray(array) {
     let output = 0;
     for (let i = 0; i < array.length; i++) {
