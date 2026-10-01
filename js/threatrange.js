@@ -202,8 +202,12 @@ function drawPercentageText(width,height,x,percentageChance) {
     percentageText.setAttribute("text-anchor","middle")
     //100.0% looked bad and I was thinking about cutting trailing zeroes but turns out that's impossible
     //thank you dan but for real
-    percentageText.textContent = parseFloat(percentageChance*100).toFixed(1)+"%";
-
+    //except it is ugh
+    if (parseFloat(percentageChance*100).toFixed(1)+"%" === "100.0%") {
+        percentageText.textContent = "100%"
+    } else {
+        percentageText.textContent = parseFloat(percentageChance*100).toFixed(1)+"%";
+    };
     return percentageText;
 };
 
